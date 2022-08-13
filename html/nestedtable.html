@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested/inner table in html</title>
+</head>
+<body>
+    <table border="1">
+        <caption>Online Order</caption>
+        <tr>
+            <th>Description</th>
+            <th>Qty</th>
+            <th>Price (RS.)</th>
+            <th>Email account note</th>
+        </tr>
+        <tr>
+            <td>Email account</td>
+            <td>10</td>
+            <td>100</td>
+            <td rowspan="5">
+                <table border="1" >
+                    <tr>
+                        <td>Mailbox</td>
+                        <td>10GB</td>
+                    </tr>
+                    <tr>
+                        <td>Wbmail</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>xyz</td>
+                        <td>10GB</td>
+                    </tr>
+                    <tr>
+                        <td>ect.</td>
+                        <td>10GB</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>FYI center</td>
+            <td>1</td>
+            <td>150</td>
+        </tr>
+        <tr>
+            <td>1-year Access</td>
+            <td>1</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td colspan="2">shipping</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td colspan="2">Tax.</td>
+            <td>150</td>
+        </tr>
+    </table>
+</body>
+</html>
