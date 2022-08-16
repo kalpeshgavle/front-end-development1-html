@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map for polygonal shapes</title>
+</head>
+<body>
+    <img src="/plant.jpg" alt="miniplant" usemap="#pot">
+    <map name="pot">
+        <!-- for selecting full portion of pot -->
+        <area shape="poly" coords="207,261,566,262,440,384,374,389,318,383" href="/clock.jpg" alt="clock">
+
+        <!-- also can select a portion of polygon as per requirement -->
+        <!-- <area shape="poly" coords="207,261,379,262,384,388,321,383" href="/clock.jpg" alt="clock"> -->
+    </map>
+</body>
+</html>

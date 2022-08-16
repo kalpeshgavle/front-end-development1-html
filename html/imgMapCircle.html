@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map for circle</title>
+</head>
+<body>
+    <h3>ImageMap for circular shape</h3>
+
+    <img src="/clock.jpg" alt="clock" usemap="#clc">
+    <map name="clc">
+        <!-- coords="x1,y1,r(x2-x1)" -->
+        <!-- first coords from centre of circle will give x1 & y1 -->
+
+        <!-- for r(radius) -->
+        <!-- second coords from straight right side end of the circle will give value of x2 & y2 -->
+        <!-- r(radius)=x2-x1 will give the value of r  -->
+        <area shape="circle" coords="350,224,87" href="/plant.jpg" alt="miniplant">
+
+        <!-- for adding another area link in same image add area tag in same map tag -->
+        <area shape="circle" coords="192,117,55" href="/rect.jpg" alt="miniplant">
+    </map>
+</body>
+</html>
