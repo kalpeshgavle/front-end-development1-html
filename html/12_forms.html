@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in html</title>
+
+</head>
+
+<body>
+    <form action="" name="" method="post">
+        <!-- text type used for provide text box for getting inputs like first name, last name -->
+
+        <!-- placeholder is used to show text in text box at initial stage -->
+
+        First Name: <input type="text" name="fname" placeholder="Enter your first name"><br><br>
+        Last Name: <input type="text" placeholder="Enter your Last name "><br><br>
+        Email:
+        <input type="email" name="mail" placeholder="Email id"><br><br>
+
+        Create New password: <input type="password" placeholder="Password"><br><br>
+        Confirm password: <input type="password" placeholder="Password"><br><br>
+
+        <!-- radio buttun is used to select one option  -->
+        <!-- in radio button the name should be same in all option  -->
+        Gender:
+        <input type="radio" name="gen">Male
+        <input type="radio" name="gen">Female
+        <input type="radio" name="gen">Other
+        <br><br>
+        <!-- checkbox is used for selecting multiple options  -->
+        Subjects:
+        <input type="checkbox">CSS
+        <input type="checkbox">Java Script
+        <input type="checkbox">jQuery
+        <br><br>
+        Select Your City:
+        <select name="city" id="">
+            <option value="" selected disabled>---City---</option>
+            <option value="">Surat</option>
+            <option value="">Vadodara</option>
+            <option value="">Vapi</option>
+            <option value="">Valsad</option>
+        </select><br><br>
+        Birth date:
+        <input type="date"><br><br>
+
+        Passing Year:
+        <input type="month"><br><br>
+        Feedback:
+        <textarea name="" id="" cols="30" rows="3" placeholder="write your feedback here"></textarea><br><br>
+
+
+        <br><br>
+        <label for="file">Upload file</label>
+        <input type="file">
+        <br><br>
+
+        <label for="range">Range</label>
+        <input type="range">
+        <br><br>
+
+        <label for="number">Number</label>
+        <input type="number">
+        <br><br>
+
+        <label for="Password">Password</label>
+        <input type="password">
+        <br><br>
+
+        <label for="time">Time</label>
+        <input type="time">
+        <br><br>
+
+        <label for="week">week</label>
+        <input type="week">
+        <br><br>
+
+        <label for="image">Image type input</label>
+        <input type="image" src="/logo.jpg" alt="submit" height="40px" width="40px">
+        <br><br>
+
+        <!-- this both buttons are same -->
+        <button>click</button>
+        <input type="button" value="button">
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+</body>
+
+</html>

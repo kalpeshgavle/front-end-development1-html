@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagemap in html</title>
+</head>
+<body>
+    <h3>ImageMap for rectangular shape</h3>
+    <!-- for rectangular shapes  -->
+    <img src="/rect.jpg" alt="frame" usemap="#rectangle">
+    <map name="rectangle">
+
+        <!-- coordinates- "x1,y1,x2,y2" -->
+        <!-- from rectangular image take coodinates of top-left point it will give x1 & y1 -->
+        <!-- from rectangular image take coodinates of bottom-right point it will give x2 & y2 -->
+        <area shape="rectangle" coords="250,48,367,191" href="https://www.google.com/" alt="google">
+        <area shape="rectangle" coords="45,150,157,236" href="clock.jpg" alt="google">
+    </map>
+</body>
+</html>
