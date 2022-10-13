@@ -1,0 +1,144 @@
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0%;
+}
+
+header .back-img {
+    background-image: url(images/img1.jpg);
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+header .back-cover {
+    display: flex;
+    width: 100%;
+}
+
+header .logo {
+    display: flex;
+    width: 30%;
+    height: 70px;
+    justify-content: center;
+
+}
+
+.logo a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo a:hover {
+    color: orange;
+}
+
+.logo .log {
+    font-size: 45px;
+    color: orange;
+    padding: 0px;
+}
+
+header .nav {
+    display: flex;
+    padding: 20px;
+    height: 70px;
+    width: 70%;
+    justify-content: space-around;
+}
+
+header .nav ul {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+}
+
+header .nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 0px 20px;
+}
+
+header .nav li a:hover {
+    color: orange;
+}
+
+input,
+span {
+    font-size: 16px;
+    padding: 0px 20px;
+}
+
+.nav input {
+    border-radius: 20px;
+    padding: 7px;
+    margin: -6px 0px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.nav button {
+
+    background-color: transparent;
+    border: 0px;
+}
+
+.nav .or {
+    color: orange;
+    font-size: 25px;
+    cursor: pointer;
+}
+.nav .or:hover{
+    color: rgb(240, 199, 123);
+}
+.nav .wh {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+.nav .wh:hover{
+    color: orange;
+}
+
+header .text-img {
+    position: absolute;
+    width: 600px;
+    top: 220px;
+    left: 125px;
+    text-transform: capitalize;
+    color: white;
+}
+header .text-img .h1,.h2{
+    font-size: 60px;
+    font-weight: 900;
+}
+header .text-img p{
+    font-size: 20px;
+}
+header .text-img .h2 {
+    padding-left: 130px;
+}
+
+header .text-img button{
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius:50px ;
+    cursor: pointer;
+}
+
+header .text-img button:hover{
+    background-color: white;
+    color: black;
+}

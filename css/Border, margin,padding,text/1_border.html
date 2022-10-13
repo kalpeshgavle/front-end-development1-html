@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders in css</title>
+    <style>
+        .cl1 {
+
+            /* border-style: dashed; */
+            /* border-style: dotted;
+            border-style: solid;
+            border-style: double;
+            border-style: groove;
+            border-style: outset;
+            border-style: inset;
+            border-style: ridge; */
+
+            border-bottom: 5px solid rgb(85, 67, 67);
+        }
+
+        /* we can select separate sides by using this prperties  
+             border-left: 5px solid red;
+            border-right: 15px solid rgb(174, 160, 160); border-top: 5px solid black;
+            border-bottom: 5px solid red;*/
+
+        .cl2 {
+            border-left: 5px solid red;
+            border-right: 15px solid rgb(174, 160, 160);
+        }
+
+
+        .cl3 {
+            border-top: 5px solid black;
+            border-bottom: 5px solid red;
+        }
+
+        /* border radius */
+        .d1 {
+            height: 200px;
+            width: 300px;
+            border: 2px solid black;
+            /* top-left top-right bottom-right bottom-left  */
+            border-radius: 20px 10px 0 50px;
+        }
+
+        .d2{
+            height: 200px;
+            width: 300px;
+            border: 12px solid red ;
+            padding: 30px;
+            border-image: url(border1.png) 10 fill;
+    
+        }
+
+    </style>
+</head>
+
+<body>
+    <p class="cl1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iusto aspernatur odio quisquam ipsam commodi
+        aliquam earum sequi magnam, rem nobis omnis! Qui molestiae eaque quisquam voluptate repellat obcaecati hic!
+    </p>
+    <p class="cl2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iusto aspernatur odio quisquam ipsam commodi
+        aliquam earum sequi magnam, rem nobis omnis! Qui molestiae eaque quisquam voluptate repellat obcaecati hic!
+    </p>
+    <p class="cl3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iusto aspernatur odio quisquam ipsam commodi
+        aliquam earum sequi magnam, rem nobis omnis! Qui molestiae eaque quisquam voluptate repellat obcaecati hic!
+    </p>
+    <br>
+
+    <div class="d1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur voluptates fugit dolorem enim debitis
+        provident. Porro quibusdam, aliquid, minima neque error vel reiciendis provident vero voluptatum dolor ducimus
+        alias.
+    </div>
+    <br><br>
+    <div class="d2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur voluptates fugit dolorem enim debitis
+        provident. Porro quibusdam, aliquid, minima neque error vel reiciendis provident vero voluptatum dolor ducimus
+        alias.
+    </div>
+</body>
+
+</html>

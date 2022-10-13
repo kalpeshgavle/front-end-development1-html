@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: bisque;
+}
+.menu{
+    text-align: center;
+    background-color: green;
+
+}
+.menu ul{
+    list-style: none;
+    display: inline-flex;
+}
+.menu li{
+    width: 140px;
+    margin: 15px;
+    padding: 15px;
+}
+
+ .menu li a{ 
+    font-family: sans-serif;
+   display: inline-block;
+   text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.active, .menu li:hover{
+
+    background-color: rgb(93, 222, 93);
+    border-radius: 2px;
+}
+
+.menu i{
+    margin-right: 8px;
+}
+
+.sub-menu-1{
+   
+    display: none;
+}
+
+.menu li:hover .sub-menu-1{
+    display: block;
+    background-color: green;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 5px;
+   }   
+.menu li:hover .sub-menu-1 ul li{
+    border-bottom: 1px solid white;
+    padding: 10px;
+    border-radius: none;
+    background-color: transparent;
+    text-align: left;
+    
+}
+.fa-angle-right{
+    float: right;
+    margin-left: 20px;
+}
+.menu li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.sub-menu-1 ul li a:hover{
+    color: rgb(47, 233, 47);
+}
+
+.sub-menu-2{
+  display: none;
+    background-color: green;
+}
+
+.hoverme:hover .sub-menu-2{
+    display: block;
+    background-color: green;
+    position: absolute;
+    margin-left: 135px;
+    margin-top: -44px;
+}

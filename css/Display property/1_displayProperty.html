@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        /* display inline property in this top and bottom magrgin / Padding  not affected  */
+        .inline {
+            list-style-type: none;
+            background-color: aqua;
+        }
+
+        .inline li {
+            background-color: antiquewhite;
+            display: inline;
+            padding: 10px;
+        }
+
+        /* display inline block property in this top and bottom margin/padding will affect */
+        .inline-b {
+            list-style-type: none;
+            background-color: yellow;
+            margin: 10px;
+        }
+
+        .inline-b li {
+            display: inline-block;
+            margin: 10px auto;
+            background-color: rgb(122, 241, 122);
+            padding: 10px ;
+        }
+
+        .Block {
+            list-style-type: none;
+            background-color: yellow;
+            margin: 10px;
+        }
+
+        .Block li {
+            margin: 10px ;
+            background-color: rgb(122, 241, 122);
+            padding: 10px ;
+            display: block;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Display: Inline</h3>
+    <ul class="inline">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact Us</li>
+        <li>Help</li>
+    </ul>
+
+    <h3>Display: Inline-Block</h3>
+    <ul class="inline-b">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact Us</li>
+        <li>Help</li>
+    </ul>
+
+
+    <h3>Display: Block</h3>
+    <ul class="Block">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact Us</li>
+        <li>Help</li>
+    </ul>
+</body>
+
+</html>

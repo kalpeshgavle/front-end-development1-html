@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform:rotate</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(240, 66, 156);
+            margin: 20px;
+        }
+
+        .div1 {
+            transition: 2s all ease;
+        }
+
+        .div1:hover {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+
+            /* this will rotate the element 180 deg in clockwise direction if value is -ve then the direction of rotation will be anti-clock wise  */
+            transform: rotate(180deg);
+
+        }
+
+        .div2 {
+            transition: 2s all ease;
+        }
+
+        .div2:hover {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+
+            /* this will flip the element on x axis omly  */
+            transform: rotatex(180deg);
+        }
+
+        .div3 {
+            transition: 2s all ease;
+        }
+
+        .div3:hover {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            transform: rotatey(180deg);
+        }
+
+        .div4 {
+            transition: 2s all ease;
+        }
+
+        .div4:hover {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            transform: rotateZ(180deg);
+        }
+        .div5 {
+            transition: 2s all ease;
+        }
+
+        .div5:hover {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+
+            /* transform: rotate3d(x,y,z,angle); */
+            transform: rotate3d(120,120,120,360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">rotate</div>
+    <div class="div2">rotateX</div>
+    <div class="div3">rotateY</div>
+    <div class="div4">rotateZ</div>
+    <div class="div5">Rotate3D</div>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform:translate</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(240, 66, 156);
+            margin: 20px;
+        }
+
+        .div1 {
+            transition: 2s all ease;
+        }
+
+        .div1:hover {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            /* transform: translate(x,y); */
+            /* transform: translate(100px, 100px); */
+            /* transform: translate(100px,0); */
+            /* transform: translate(0,100px); */
+            transform: translate(100px);
+        }
+
+        .div2 {
+            transition: 2s all ease;
+        }
+
+        .div2:hover {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            transform: translateX(100px);
+        }
+
+        .div3 {
+            transition: 2s all ease;
+        }
+
+        .div3:hover {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            transform: translateY(120px);
+        }
+
+        .div4 {
+            transition: 2s all ease;
+        }
+
+        .div4:hover {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            transform: translateZ(100px);
+        }
+        .div5 {
+            transition: 2s all ease;
+        }
+
+        .div5:hover {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+
+            /* transform: translate3D(x,y,z); */
+            transform:translate3D(100px, 100px, 350px)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">translate</div>
+    <div class="div2">translateX</div>
+    <div class="div3">translateY</div>
+    <div class="div4">translateZ</div>
+    <div class="div5">translate3D</div>
+</body>
+
+</html>

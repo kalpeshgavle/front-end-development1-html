@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes in CSS</title>
+    <style>
+        /* A pseudo-class is used to define a special state of an element. For example, it can be used to: Style an element when a user mouses over it Style visited and unvisited links differently Style an element when it gets focus */
+
+        a {
+            text-decoration: none;
+
+        }
+
+        /* link is an universal class */
+        a:link {
+            color: blue;
+        }
+
+        /* visited class affect the visited link, once link is visited then this values will apply to link   */
+        a:visited {
+            color: brown;
+        }
+
+        /* active class affect when we select link/ click on a link  */
+        a:active{
+            background-color: aqua;
+            color: black;
+        }
+
+        /* hover class affect the link when we move cursor on a link at this time hover properties and values will be apply  */
+
+        button{
+            background-color: rgb(18, 246, 170);
+            color: black;
+            height: 30px;
+            width: 110px;
+            font-size: 15px;
+            border-radius: 15px;
+        }
+        button:hover{
+            background-color:rgb(0, 8, 5) ;
+            color: aliceblue;
+            font-size: 20px;
+            height: 45px;
+            width: 125px;
+            border: 2px solid rgb(18, 246, 170) ;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">Home</a><br><br>
+    <button>Click Here</button>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>keyframe aninimation</title>
+    <style>
+        div {
+            /* shorthand property  */
+            /* animation: ; */
+
+
+            /* animation-timing-function: ease/ ease-in/ ease-in-out/ ease-out/ linear; */
+
+            /* time taken for complate animation   */
+            /* animation-duration: 0ms/ 0s; */
+
+            /* time take to start an animation can give delay to start an animation  */
+            /* animation-delay:  0ms/ 0s; */
+
+            /* set name for animation can give any name  */
+            animation-name: xyz;
+
+            /* animation-fill-mode: backwards/ forwards/ both; */
+
+            /* if we select infinite animation repeat continuosly and if we select any number like 2/4/9/10 animation repeats for that numbers  */
+            /* animation-iteration-count: infinite/ 2/ 10; */
+
+            /* flow of animation or how animation will work  */
+            /* animation-direction:  alternate/ alternate-reverse/ reverse; */
+        }
+
+        .d1 {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            animation-name: example;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+        }
+
+        @keyframes example {
+            from {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+
+            }
+
+            to {
+                margin-left: 400px;
+                background-color: yellow;
+            }
+        }
+
+        .loader1 {
+            /* position: relative; */
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            border: 14px solid #f3f3f3;
+            border-top: 14px solid #3498db;
+            border-bottom: 14px solid #3498db;
+            animation-name: spin1;
+            animation-duration: .5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes spin1 {
+            0% {
+                margin: 0%;
+                transform: rotate(0deg);
+            }
+
+            100% {
+                margin: 0%;
+                transform: rotate(360deg);
+            }
+        }
+
+        .loader2 {
+            /* position: absolute; */
+            /* top: 137px;
+            left: 37px; */
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            border: 10px solid transparent;
+            border-top: 10px solid blue;
+            border-right: 10px solid red;
+            border-bottom: 10px solid yellow;
+            border-left: 10px solid green;
+            animation-name: spin2;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+        }
+
+        @keyframes spin2 {
+            0% {
+                margin: 0%;
+                transform: rotate(0deg);
+            }
+
+            100% {
+                margin: 0%;
+                transform: rotate(360deg);
+            }
+
+        }
+        
+      
+        .d2 {
+
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            animation-name: ex2;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 1s;
+            animation-duration: 5s;
+            /* animation-direction: alternate; */
+        }
+
+        @keyframes ex2 {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: rgb(49, 181, 57);
+                margin-top: 0px;
+                margin-left: 200px;
+            }
+
+            50% {
+                background-color: rgb(15, 50, 89);
+
+                margin-left: 200px;
+                margin-top: 200px;
+            }
+
+            75% {
+                background-color: rgb(190, 32, 148);
+                margin-left: 0px;
+                margin-top: 200px;
+            }
+
+            100% {
+                background-color: rgb(154, 207, 8);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1"> </div>
+    <div class="loader1"> </div>
+    <div class="loader2"> </div>
+    <div class="d2"> </div>
+</body>
+
+</html>

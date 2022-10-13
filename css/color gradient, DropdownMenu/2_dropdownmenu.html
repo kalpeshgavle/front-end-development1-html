@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropdownMenu</title>
+    <style>
+        ul{
+            background-color: aquamarine;
+        }
+        li{
+            list-style: none;
+            font-size: 30px;
+            padding: 23px;
+            display: inline-block;
+            color: blue;
+            background-color: bisque;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+
+        .btn-hover{
+            position: relative;
+        }
+        .btn-menu{
+            display: none;
+            position: absolute;
+            top: 76px;
+            width: 120px;
+            left: 0;
+            padding: 10px;
+        }
+        .btn-hover:hover .btn-menu{
+            display: block;
+            background-color: aqua;
+           
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="btn-hover">
+            Product
+        <div class="btn-menu">
+            <a href="">Product 1</a>
+            <hr color="gray"                        >
+            <a href="">Product 2</a>
+        </div>
+    </li>
+        <li><a href="">help</a></li>
+    </ul>
+</body>
+</html>

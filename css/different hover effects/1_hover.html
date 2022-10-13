@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            text-transform: lowercase;
+        }
+        #b1 {
+            height: 40px;
+            width: 120px;
+            background-color: aquamarine;
+            border-radius: 10px;
+        }
+
+        #b1:hover {
+            background-color: rgb(7, 7, 7);
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        #b2 {
+            height: 40px;
+            width: 120px;
+            background-color: transparent;
+            border-radius: 10px;
+
+        }
+
+        #b2:hover {
+            color: white;
+            background-color: black;
+            border: 2px solid black;
+        }
+
+        #b3 {
+            margin-left: 40px;
+            height: 60px;
+            width: 60px;
+            border: 2px solid green;
+            border-radius: 50px;
+            color: green;
+            background-color: transparent;
+        }
+
+        #b3:hover {
+            background-color: green;
+            border: 3px solid white;
+            color: white;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <button id="b1">Button1</button><br><br>
+    <button id="b2">Button2</button><br><br>
+    <button id="b3"><i class="fa-sharp fa-solid fa-user fa-2x"></i></button><br><br>
+    <button id="b4">Button4</button><br><br>
+    <button id="b5">Button5</button><br><br>
+</body>
+
+</html>

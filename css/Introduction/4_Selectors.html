@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+        /* 1. Element selectors: target a element to apply style  */
+        p {
+            background-color: aquamarine;
+        }
+
+        /* 2. Class selectors: target a class by using . to apply style  */
+        .class1 {
+            background-color: blanchedalmond;
+        }
+
+        /*3. Id selectors: target a Id by using # to apply style  */
+        #id1 {
+            background-color: black;
+            color: rgb(241, 241, 179);
+        }
+
+        /*3. Group selectors: target all ids, class, element to give same style to a group.  */
+        div,
+        .class2,
+        #id2 {
+            background-color: brown;
+        }
+
+        /*3. Universal selectors: by using universal selectors we can give style whole page by using *.    */
+        * {
+            background-color: rgb(188, 232, 246);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- by using the selectors we can apply css to perticular section/ part of a webpage. -->
+    <!-- 1. Element selectors  -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium, magnam magni expedita quis voluptate,
+        labore, ducimus incidunt ratione quia ipsum! Aliquam voluptatem earum ullam dignissimos quibusdam magni quae
+        totam!</p>
+
+    <!-- 2. Class selectors  -->
+
+    <div class="class1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nam, commodi soluta animi dolorum fuga
+        doloremque sint saepe laborum ducimus dolore maiores, pariatur temporibus voluptates in rerum ullam ex quaerat.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat natus exercitationem temporibus.
+    </div>
+    <br>
+
+
+    <!-- 3. Id selectors  -->
+    <div id="id1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam at similique blanditiis harum excepturi? Iusto
+        fuga pariatur nisi odit. Ipsa hic quam nisi reprehenderit facilis sunt nostrum provident, tempora excepturi
+        obcaecati recusandae natus voluptates? Dolore deleniti repellat ipsum sapiente quae.
+    </div>
+    <br>
+
+    <!-- 4. Group selectors  -->
+
+    <div class="class2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni expedita illum odio voluptate cupiditate ducimus
+        molestias odit obcaecati, suscipit recusandae animi quo quae provident perferendis, aut autem? Ratione, libero
+        qui.
+    </div>
+    <br>
+    <div id="id2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni expedita illum odio voluptate cupiditate ducimus
+        molestias odit obcaecati, suscipit recusandae animi quo quae provident perferendis, aut autem? Ratione, libero
+        qui.
+    </div>
+    <br>
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni expedita illum odio voluptate cupiditate ducimus
+        molestias odit obcaecati, suscipit recusandae animi quo quae provident perferendis, aut autem? Ratione, libero
+        qui.
+    </div>
+</body>
+
+</html>

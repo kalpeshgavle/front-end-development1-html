@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform:skew</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(240, 66, 156);
+            margin: 20px;
+        }
+
+        .div1 {
+            transition: 2s all ease;
+        }
+
+        .div1:hover {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            /* transform: skew(x,y); */
+            /* transform: skew(30deg, 30deg); */
+            /* transform: skew(20deg,0); */
+            /* transform: skew(0,30deg); */
+            transform: skew(30deg);
+        }
+
+        .div2 {
+            transition: 2s all ease;
+        }
+
+        .div2:hover {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            transform: skewX(40deg);
+        }
+
+        .div3 {
+            transition: 2s all ease;
+        }
+
+        .div3:hover {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            transform: skewY(40deg);
+           
+        }
+
+        .div4 {
+            transition: 2s all ease;
+        }
+
+        .div4:hover {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            transform: skewZ(20deg);
+        }
+        .div5 {
+            transition: 2s all ease;
+        }
+
+        .div5:hover {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+
+            /* transform: translate3D(x,y,z); */
+            transform: skew3D(30deg, 20deg, 35deg)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">skew</div>
+    <div class="div2">skewX</div>
+    <div class="div3">skewY</div>
+    <div class="div4">skewZ</div>
+    <div class="div5">skew3D</div>
+</body>
+
+</html>

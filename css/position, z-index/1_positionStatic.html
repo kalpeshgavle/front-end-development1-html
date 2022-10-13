@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Static in css</title>
+</head>
+<style>
+    /* Static positioned elements are not affected by the top,
+    bottom, left and right properties.
+    An element with position: static; is not positioned in any special way it is always positioned according to the normal flow of the page */
+    img {
+        height: 300px;
+        width: 300px;
+        position: static;
+        /* this property will not affect when position is static */
+        top: 70px;
+    }
+</style>
+
+<body>
+    <img src="img2.jpg" alt="">
+</body>
+
+</html>

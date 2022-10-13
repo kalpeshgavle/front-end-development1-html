@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Element</title>
+    <style>
+        div{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            margin: 10px auto;
+        }
+
+        div p{
+            padding: 20px;
+        }
+
+        p::first-letter{
+            font-size: 0.3in;
+            color: red;
+            text-transform: uppercase;
+        }
+
+        p::first-line{
+            color: blue;
+        }
+
+        p::after{
+            content: "hello";
+            /* content: url(img3.jpg); */
+            
+        }
+
+
+        p::before{
+            content: "hello ";
+            /* content: url(img3.jpg); */
+        }
+
+        p::selection{
+            background-color: yellow;
+        }
+
+        ::marker{
+            color: aqua;
+            font-size: 23px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, velit fugiat iste deleniti ratione eaque quia quas accusantium repellendus numquam, quam laborum architecto dolorem obcaecati incidunt illo minima nobis harum non id et vero blanditiis expedita distinctio? Molestias, non amet?</p>
+    </div>
+</body>
+</html>

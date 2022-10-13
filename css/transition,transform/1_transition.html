@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: yellowgreen;
+            margin: 20px;
+        }
+
+        .div1{
+            transition-duration:2s ;
+            transition-property: all;
+            transition-timing-function: ease;
+            /* background-color: antiquewhite;*/
+
+        }
+
+        .div1:hover{
+            background-color: aqua;
+            width: 500px;
+            /* height: 300px; */
+        }
+        .div2{
+            transition-duration:4s ;
+            transition-property: all;
+            transition-timing-function: ease-in;
+            /* background-color: antiquewhite;*/
+
+        }
+
+        .div2:hover{
+            background-color: aqua;
+            width: 500px;
+            /* height: 300px; */
+        }
+        .div3{
+            transition-duration:4s ;
+            transition-property: all;
+            transition-timing-function: ease-out;
+            /* background-color: antiquewhite;*/
+
+        }
+
+        .div3:hover{
+            background-color: aqua;
+            width: 500px;
+            /* height: 300px; */
+        }
+        .div4{
+            transition-duration:4s ;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+            /* background-color: antiquewhite;*/
+
+        }
+
+        .div4:hover{
+            background-color: aqua;
+            width: 500px;
+            /* height: 300px; */
+        }
+        .div5{
+            transition-duration:4s ;
+            transition-property: all;
+            transition-timing-function: linear;
+            /* background-color: antiquewhite;*/
+
+        }
+
+        .div5:hover{
+            background-color: aqua;
+            width: 500px;
+            /* height: 300px; */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="div1">ease</div>
+    <div class="div2">ease-in</div>
+    <div class="div3">ease-out</div>
+    <div class="div4">ease-in-out</div>
+    <div class="div5">linear</div>
+</body>
+</html>

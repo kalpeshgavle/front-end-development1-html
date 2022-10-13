@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative & Absolute in CSS</title>
+    <style>
+        /* An element with position: relative;
+        is positioned relative to its normal position. Setting the top, right,bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element  */
+
+        /* An element with position: absolute;
+        is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). However;
+        if an absolute positioned element has no positioned ancestors,
+        it uses the document body,
+        and moves along with page scrolling.  */
+        .main {
+            position: relative;
+            /* height: 350px;
+            width: 100%; */
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+            border: 4px solid blueviolet;
+            /* position: relative; */
+        }
+
+        .img1 {
+            /* if we select position absolute content will take only required space kind of inline element */
+            position: absolute;
+        }
+
+        .img2 {
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+
+        .img3 {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="img1">
+            <img src="/img2.jpg" alt="">
+        </div>
+        <div class="img2">
+            <img src="/img3.jpg" alt="">
+        </div>
+        <div class="img3">
+            <img src="/img4.jpg" alt="">
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>
