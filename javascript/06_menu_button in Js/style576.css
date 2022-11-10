@@ -1,0 +1,32 @@
+@media(max-width: 576px) {
+    .menu-logo {
+        width: 100%;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .btn {
+        display: block;
+        height: 40px;
+        width: 40px;
+        background-color: black;
+        color: white;
+    }
+
+    .menubar .nav-items {
+        display: block;
+        list-style: none;
+    }
+
+    .menubar .nav-items ul {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        width: 170px;
+        top: 50px;
+        right: 5px;
+        background-color: white;
+    }
+}

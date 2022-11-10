@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt in Js</title>
+    <script>
+        function prmpt() {
+            let name_1 = prompt("Enter Your Name");
+
+            if (name_1 == "") {
+                alert("You did not entered your name");
+                document.getElementById("p1").innerHTML = "Please enter your name first";
+            } else {
+                document.getElementById("p1").innerHTML = name_1;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="prmpt()">Prompt</button>
+    <p id="p1"></p>
+</body>
+
+</html>

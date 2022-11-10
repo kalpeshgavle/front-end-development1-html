@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm popup in js</title>
+    <script>
+        function cnfm() {
+            if (confirm("are you sure to leave this page") == true) {
+                // window.open("https://www.google.com");
+                document.getElementById("p1").innerHTML = "You select ok";
+                document.body.style.backgroundColor = "green";
+            }
+            else {
+                document.getElementById("p1").innerHTML = "You select cancel";
+                document.body.style.backgroundColor = "yellow";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="cnfm()">confirm</button>
+    <p id="p1"></p>
+</body>
+
+</html>

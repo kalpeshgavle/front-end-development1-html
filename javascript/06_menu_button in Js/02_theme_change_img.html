@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Change Theme by clicking img</title>
+    <style>
+        body {
+            background-color: skyblue;
+        }
+
+        img {
+            height: 100px;
+            width: 100px;
+        }
+
+        .dark-theme {
+            background-color: rgb(4, 4, 80);
+            color: White;
+        }
+    </style>
+</head>
+
+
+<body id="body">
+    <img src="images/moon.png" alt="moon" id="dark">
+    <h1></h1>
+
+
+    <script>
+        let icon = document.getElementById("dark");
+        let bodypage = document.getElementById("body");
+
+
+        icon.addEventListener("click", function () {
+            bodypage.classList.toggle("dark-theme");
+            document.querySelector("h1").innerHTML = "dark mode"
+
+            if (bodypage.classList.contains("dark-theme") == true) {
+                icon.src = "images/sun.png";
+            } else {
+                icon.src = "images/moon.png";
+                document.querySelector("h1").innerHTML = "light mode"
+
+            }
+        })
+    </script>
+</body>
+
+</html>

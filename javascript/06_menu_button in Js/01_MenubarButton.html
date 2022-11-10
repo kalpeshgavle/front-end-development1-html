@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menubar by JavaScript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: green;
+        }
+
+        .menubar {
+            display: flex;
+            width: 100%;
+            align-items: center;
+        }
+
+        .menu-logo {
+            width: 30%;
+            padding: 10px;
+        }
+
+        .menu-list {
+            width: 60%;
+            padding: 10px;
+        }
+
+        .menu-list ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style576.css">
+</head>
+
+<body>
+    <div class="menubar">
+        <div class="menu-logo">
+            <a href="#">
+                <h1>Menubar by JS</h1>
+            </a>
+        </div>
+        <div class="menu-list">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="menu-btn">
+            <button class="btn"> <span class="fa-solid fa-bars"></span></button>
+        </div>
+    </div>
+
+    <script>
+        let disp = document.querySelector(".menu-btn");
+        let nav = document.querySelector(".menu-list");
+        disp.addEventListener("click", function () {
+            nav.classList.toggle("nav-items");
+        })
+    </script>
+</body>
+
+</html>

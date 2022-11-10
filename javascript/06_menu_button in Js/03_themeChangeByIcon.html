@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Theme change by using icons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <style>
+        .dark-mode {
+            background-color: rgb(0, 0, 90);
+            color: white;
+        }
+
+        span {
+            font-size: 105px;
+
+        }
+
+        #msg {
+            font-size: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <span class="fa-solid fa-moon" id="icon"></span>
+    <p id="msg"></p>
+
+    <script>
+        let btn = document.querySelector(".fa-moon");
+        let bodytheme = document.querySelector("body");
+
+        btn.addEventListener("click", function () {
+            bodytheme.classList.toggle("dark-mode");
+
+            if (bodytheme.classList.contains("dark-mode") == true) {
+                document.getElementById("icon").innerHTML = "<span class='fa-solid fa-sun'></span>";
+                btn.classList.remove("fa-moon");
+                document.getElementById("msg").innerHTML = "dark mode"
+            } else {
+                document.getElementById("icon").innerHTML = "<span class='fa-solid fa-moon'></span>";
+                btn.classList.remove("fa-sun");
+                document.getElementById("msg").innerHTML = "light mode"
+            }
+        })
+    </script>
+</body>
+
+</html>

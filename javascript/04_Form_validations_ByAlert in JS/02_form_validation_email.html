@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email validation</title>
+    <script>
+        function ValidateEmail() {
+            let mail = document.form1.mail.value;
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+                return (true)
+            }
+            alert("You have entered an invalid email address!")
+            return (false)
+        }
+    </script>
+</head>
+
+<body>
+    <h3>Email Regular Expression</h3>
+    <form action="#" name="form1" method="post">
+        <input type="text" name="mail" placeholder="Enter Email"><br><br>
+        <input type="submit" onclick="return ValidateEmail()">
+    </form>
+</body>
+
+</html>

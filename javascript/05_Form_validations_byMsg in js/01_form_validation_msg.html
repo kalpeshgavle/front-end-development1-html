@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation by showing Message</title>
+    <style>
+        .container {
+            width: 250px;
+            margin: 5px auto;
+            border: 2px double green;
+            padding: 5px;
+        }
+
+        .form {
+            margin: 8px;
+        }
+
+        input[type=text],
+        [type=password] {
+            width: 220px;
+            padding: 5px;
+            margin: 5px 0px 5px 0px;
+        }
+
+        input[type=submit] {
+            width: 234px;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+    <script>
+        function validform() {
+
+            // for user name
+            const checkpass = /^(?=.*[A-Z]).*$/;
+            let user = document.form1.uname.value;
+            let pword = document.form1.pass.value;
+            if (user == "") {
+                document.getElementById("msg1").innerHTML = "*Please enter User name";
+                document.getElementById("u1").focus();
+                return false;
+            } else if (pword == "") {
+                document.getElementById("msg2").innerHTML = "*Please enter Password";
+                document.getElementById("pwd").focus();
+                return false;
+            } else if (!checkpass.test(pword)) {
+                document.getElementById("msg2").innerHTML = "*Password must have at least one Uppercase Character.";
+                return false
+            }
+        }
+
+        function show_pass() {
+            let p = document.getElementById("pwd");
+            if (p.type == "password") {
+                p.type = "text";
+            }
+            else {
+                p.type = "password";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <h3>Login Page</h3>
+            <form action="#" name="form1" method="post">
+                <input type="text" name="uname" id="u1" placeholder="Enter User name">
+                <span id="msg1"></span>
+                <input type="password" name="pass" id="pwd" placeholder="Enter Password">
+                <input type="checkbox" name="showpass" onclick="show_pass()" id="sp">Show Password<br>
+                <span id="msg2"></span>
+                <input type="submit" onclick="return validform()">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in javascript</title>
+</head>
+
+<body>
+    <script>
+        // 1. Var
+        // in var var_1 (identifier) can redeclare and reassign but is not practical while doing longer coding.
+
+        var var_1 = 5;
+        document.write(var_1)
+
+        var var_1 = 7;
+        document.write(var_1)
+
+
+
+        // 2. let
+
+        // in let if identifier declared once then it cannot be redeclared
+        // identifier can reassign in let
+
+        let num1 = 44;
+        document.writeln(num1)
+
+        // trying to redeclare identifier it will throw an error
+        // let num1 =34;
+        // document.write(num1)
+
+        // trying to reassign identifier it will work
+        num1 = 43;
+        document.writeln(num1)
+
+
+
+        // 3. const - fixed values
+        // in const once identifier is declared then we cannot redeclare or reassign it.
+
+        const pi = 3.14;
+        // pi= 22; this will throw an error
+        document.write(pi)
+
+        // this will also gives an error 
+        // const pi = 22.7;
+        // document.write(pi)
+        const a = {
+            name :'kalpesh',
+            class: 1,
+        }
+
+        // this is how we can add/change vlues in const object
+        // a['name']= 'abc'
+        a['age'] = 24;
+        console.log(a)
+        document.write(a['name'])
+
+    </script>
+</body>
+
+</html>
