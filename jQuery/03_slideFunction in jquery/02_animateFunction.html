@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Animate function in jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <style>
+        .div1 {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                $(".div1").animate({ left: "400px" }, 2000)
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="btn1">Click here</button>
+    <div class="div1"></div>
+</body>
+
+</html>

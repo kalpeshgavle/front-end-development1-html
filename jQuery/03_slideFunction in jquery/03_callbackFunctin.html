@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Callback Function in jquery </title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <style>
+        .div1 {
+            height: 150px;
+            width: 150px;
+            background-color: rgb(35, 154, 223);
+        }
+    </style>
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                $(".div1").hide(function () {
+                    alert("your content is now hidden");
+                });
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="btn1">Click here</button>
+    <div class="div1"></div>
+</body>
+
+</html>

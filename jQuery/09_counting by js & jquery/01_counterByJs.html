@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Counter by javaScript</title>
+
+</head>
+
+<body>
+    <div id="counter"></div>
+    <script>
+        let c = setInterval(updated);
+        let value = 700;
+        function updated() {
+            let strt = document.getElementById("counter");
+            strt.innerHTML = ++value;
+            if (value == 1000) {
+                clearInterval(c);
+            }
+        }
+    </script>
+</body>
+
+</html>

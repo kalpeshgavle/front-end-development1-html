@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>chaining function in jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <style>
+        .div1 {
+            width: 50%;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                $(".div1").css({ "background-color": "yellow", "border-radius": "20px" }).slideUp(2000).slideDown(2000);
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="btn1">Add css</button>
+    <div class="div1"></div>
+</body>
+
+</html>

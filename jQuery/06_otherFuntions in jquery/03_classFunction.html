@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>removeFunctions in jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <style>
+        .div1 {
+            height: 250px;
+            width: 250px;
+            background-color: rgb(0, 0, 0);
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        .innertext {
+            color: white;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            color: grey;
+        }
+
+        .div2 {
+            height: 300px;
+            width: 250px;
+            border: 2px solid black;
+            background-color: rgb(0, 0, 0);
+            padding: 10px;
+        }
+
+        p {
+            color: rgb(153, 143, 143);
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $("#addclass").click(function () {
+                $("h1").addClass("innertext");
+            })
+            $("#removeclass").click(function () {
+                $("h1").removeClass("innertext");
+            })
+            $("#toggleclass").click(function () {
+                $("p").toggleClass("innertext");
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="addclass">add class</button>
+    <button id="removeclass">remove class</button>
+    <button id="toggleclass">toggle class</button>
+    <hr>
+    <div class="div1">
+        <h1>Click on addclass button to add new class here</h1>
+    </div>
+    <br>
+    <div class="div2">
+        <p>The Battle of the Defile was fought over three days in July 731 in and near the Takhtakaracha Pass (in
+            modern Uzbekistan) between a large army of the Umayyad Caliphate and forces of the Türgesh Khaganate. The
+            Türgesh had been besieging Samarkand; Samarkand's commander, Sawra ibn al-Hurr al-Abani, sent a request for
+            relief to the newly appointed gove</p>
+    </div>
+</body>
+
+</html>

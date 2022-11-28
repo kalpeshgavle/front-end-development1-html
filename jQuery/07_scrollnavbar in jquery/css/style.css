@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar section */
+
+.navbar .nav-items {
+    /* background-color: green; */
+    position: fixed;
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    z-index: 2;
+}
+
+.navbar .nav-scroll {
+    background-color: rgb(9, 117, 50);
+}
+
+
+.navbar .nav-items .nav-logo {
+    width: 20%;
+    /* background-color: red; */
+    text-align: center;
+}
+
+.navbar .nav-items .nav-logo a {
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+.navbar .nav-items .nav-menu {
+    width: 60%;
+}
+
+.navbar .nav-items .nav-menu ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.navbar .nav-items .nav-menu ul li {
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.navbar .nav-items .nav-buttons {
+    width: 20%;
+    text-align: center;
+}
+
+.navbar .nav-items .nav-buttons .btns {
+    width: 40px;
+    height: 40px;
+    margin: 0px 5px 0px 5px;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    color: white;
+
+
+}
+
+/* body section */
+
+.container {
+    background-image: url("../images/img1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+.container .img-text {
+    color: white;
+    height: 150px;
+    width: 260px;
+    position: absolute;
+    top: 300px;
+    left: 90px;
+}
+
+.container .img-text h1,
+p,
+button {
+    padding: 5px 0px 5px 0px;
+}
+
+.container .img-text .btn1 {
+    width: 120px;
+    height: 40px;
+    font-size: 1rem;
+}
+
+.info {
+    text-align: center;
+}

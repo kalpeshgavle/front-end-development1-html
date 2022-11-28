@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Counter by javaScript</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+</head>
+
+<body>
+    <div id="counters">900</div>
+    <script>
+        function counter() {
+            let $counts = setInterval(function () {
+                let $c = parseInt($("#counters").text());
+                $("#counters").text((++$c).toString());
+                if ($c == 1000) {
+                    clearInterval($counts)
+                }
+            })
+        }
+        counter();
+
+    </script>
+</body>
+
+</html>

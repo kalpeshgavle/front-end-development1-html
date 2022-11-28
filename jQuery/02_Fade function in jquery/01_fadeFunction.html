@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Fade function in jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+
+        }
+
+        .box1 {
+            display: none;
+            background-color: green;
+        }
+
+        .box2 {
+            background-color: rgb(51, 53, 51);
+        }
+
+        .box3 {
+            background-color: rgb(8, 31, 232);
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".box1").fadeIn(3000);
+            })
+
+            $("#btn2").click(function () {
+                $(".box2").fadeOut();
+            })
+
+            $("#btn3").click(function () {
+                $(".box3").fadeToggle(2900);
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+    <button id="btn1">Fade in</button>
+    <button id="btn2">Fade out</button>
+    <button id="btn3">Fade toggle</button>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+
+</html>

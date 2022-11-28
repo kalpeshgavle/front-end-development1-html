@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>owl-carousel in jquery</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <!-- owl-carousel js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+    <!-- owl-carousel css cdn-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <style>
+        img {
+            /* width: 100px; */
+            height: 250px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="images/img1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/img2.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="images/img3.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/img4.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/img5.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="images/img6.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

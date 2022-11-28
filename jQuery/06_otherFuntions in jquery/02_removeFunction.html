@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>removeFunctions in jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <style>
+        .div1 {
+            background-color: rgb(240, 95, 95);
+            width: 200px;
+            height: 300px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+
+            // empty function clears all contents inside div
+            $("#empty").click(function () {
+                $(".div1").empty();
+            })
+
+            // remove function removes whole div with contents inside it
+            $("#remove").click(function () {
+                $(".div1").remove();
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="empty">emptyFunction</button>
+    <button id="remove">removeFunction</button>
+    <hr>
+    <div class="div1">
+        <p>
+            The Battle of the Defile was fought over three days in July 731 in and near the Takhtakaracha Pass (in
+            modern Uzbekistan) between a large army of the Umayyad Caliphate and forces of the Türgesh Khaganate. The
+            Türgesh had been besieging Samarkand; Samarkand's commander, Sawra ibn al-Hurr al-Abani, sent a request for
+            relief to the newly appointed gove
+        </p>
+    </div>
+</body>
+
+</html>

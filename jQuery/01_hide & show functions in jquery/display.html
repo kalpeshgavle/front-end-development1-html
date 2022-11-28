@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>display function hide, show & toggle content in jquery</title>
+    <style>
+        h1 {
+            background-color: brown;
+            width: 200px;
+        }
+    </style>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".msg").hide(1000);
+            })
+
+            $("#btn2").click(function () {
+                $(".msg").show(1000);
+            })
+
+            $("#btn3").click(function () {
+                $(".msg1").toggle(1000);
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="btn1">Hide Content</button>
+    <button id="btn2">show Content</button>
+    <button id="btn3">toggle Content</button>
+    <h1 class="msg">Hello world</h1>
+    <h1 class="msg1">Toggle content</h1>
+</body>
+
+</html>

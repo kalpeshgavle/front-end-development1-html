@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>setFunction in jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                alert($("#txt").text());
+            })
+            $(".btn2").click(function () {
+                alert($("#txt1").html());
+            })
+            $(".btn3").click(function () {
+                alert($("#ip1").val());
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button class="btn1">Set/Change text</button>
+    <button class="btn2">Set/Change html</button>
+    <button class="btn3">Set/Change value</button>
+    <hr>
+    <p id="txt">hello</p>
+    <p id="txt1">hello</p>
+    <input type="text" value="text" readonly id="ip1">
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>addFunctions in jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            // append & prepend functions add items in existing list
+            $("#btn1").click(function () {
+                $("ul").append("<li>append item</li>")
+            })
+            $("#btn2").click(function () {
+                $("ul").prepend("<li>prepend item</li>")
+            })
+
+            // before & after function will create new list 
+            $("#btn3").click(function () {
+                $("ul").before("<li>prepend item</li>")
+            })
+
+            // before & after function for img
+
+            $("#btn4").click(function () {
+                $("#img1").before("<img src='images/img2.webp' style=' height:180px; width:180px'>");
+            })
+
+            $("#btn5").click(function () {
+                $("#img1").after("<img src='images/img2.webp' style=' height:180px; width:180px'>");
+            })
+        })
+    </script>
+    <style>
+        img {
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">append funtion</button>
+    <button id="btn2">prepend funtion</button>
+    <button id="btn3">before funtion</button>
+    <button id="btn4">before funtion for img</button>
+    <button id="btn5">after funtion for img</button>
+
+    <hr>
+
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+    </ul>
+
+    <img src="images/img1.jpg" id="img1">
+    <!-- <img src="images/img2.webp" style=" height:180px; width:180px"> -->
+</body>
+
+</html>

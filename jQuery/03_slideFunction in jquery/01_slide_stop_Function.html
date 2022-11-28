@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>slideFunction- slideUp, slideDown, slideToggle & stop in jquery</title>
+    <style>
+        .div1 {
+            width: 100%;
+            height: 200px;
+            background-color: green;
+        }
+
+        .div2 {
+            width: 100%;
+            height: 200px;
+            background-color: yellow;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+</head>
+
+<body>
+    <button id="btn1">slideUp</button>
+    <button id="btn2">slideDown</button>
+    <button id="btn3">slide toggle</button>
+    <button id="btn4">stop</button>
+
+    <div class="div1"></div>
+    <div class="div2"></div>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".div1").slideUp(2000);
+            })
+
+            $("#btn2").click(function () {
+                $(".div1").slideDown(2000);
+            })
+
+            $("#btn3").click(function () {
+                $(".div2").slideToggle(2000);
+            })
+
+            $("#btn4").click(function () {
+                $(".div1,.div2").stop();
+            })
+        })
+    </script>
+</body>
+
+</html>

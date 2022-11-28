@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>bxSlider</title>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- bxSlider cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+    <!-- bxSlider css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css" />
+    <script>
+        $(document).ready(function () {
+            $(".bxslider").bxSlider({
+                mode: "fade",
+                useCSS: "false",
+                auto: "true",
+                captions: "true"
+            });
+        })
+    </script>
+
+    <style>
+        img {
+            height: 600px;
+            width: 100%;
+            /* background-position: center;
+            background-size: contain; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bxslider">
+        <div class="img"><img src="images/img1.jpg" title="Funky roots"></div>
+        <div class="img"><img src="images/img2.jpg" title="The long and winding road"></div>
+        <div class="img"><img src="images/img3.jpg" title="Happy trees"></div>
+    </div>
+</body>
+
+</html>

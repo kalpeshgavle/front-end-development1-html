@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <title>navbar scrolling</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        $(function () {
+            let $navbar = $(".nav-items");
+            $(window).scroll(function () {
+                let $scroll = $(this).scrollTop();
+                if ($scroll > 0) {
+                    $navbar.addClass("nav-scroll")
+                } else {
+                    $navbar.removeClass("nav-scroll")
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-items">
+            <div class="nav-logo">
+                <a href="#">logo!!!</a>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Help</li>
+                    <li>Support</li>
+                </ul>
+            </div>
+            <div class="nav-buttons">
+                <button class="btns"><span class="fa-solid fa-magnifying-glass"></span></button>
+                <button class="btns"><span class="fa-solid fa-users"></span></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="img-text">
+            <h1>Hello</h1>
+            <p>Please click below to learn more</p>
+            <button class="btn1">Learn More</button>
+        </div>
+    </div>
+    <div class="info">
+        <div class="info-grid">
+            <h1>Hello</h1>
+            <p>Please click below to learn more</p>
+        </div>
+        <div class="info-grid">
+            <h1>Hello</h1>
+            <p>Please click below to learn more</p>
+        </div>
+        <div class="info-grid">
+            <h1>Hello</h1>
+            <p>Please click below to learn more</p>
+        </div>
+        <div class="info-grid">
+            <h1>Hello</h1>
+            <p>Please click below to learn more</p>
+        </div>
+        <div class="info-grid">
+            <h1>Hello</h1>
+            <p>Please click below to learn more</p>
+        </div>
+        <div class="info-grid">
+            <h1>Hello</h1>
+            <p>Please click below to learn more</p>
+        </div>
+        <div class="info-grid">
+            <h1>Hello</h1>
+            <p>Please click below to learn more</p>
+        </div>
+        <div class="info-grid">
+            <h1>Hello</h1>
+            <p>Please click below to learn more</p>
+        </div>
+    </div>
+</body>
+
+</html>

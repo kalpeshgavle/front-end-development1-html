@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>fadeTo function</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            background-color: red;
+        }
+
+        .box2 {
+            background-color: rgb(20, 189, 23);
+        }
+
+        .box3 {
+            background-color: rgb(17, 193, 212);
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $(".box1, .box2, .box3").fadeTo(2000, 0.4);
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="btn">fadeTo</button>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+</body>
+
+</html>

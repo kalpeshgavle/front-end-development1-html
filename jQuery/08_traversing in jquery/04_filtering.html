@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>filtering in jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btn").click(function () {
+                // $(".sub1").first().css("border", "3px solid black")
+                // $(".sub1").last().css("border", "3px solid black")
+                // $("div").eq(5).css("border", "3px solid black")
+                // $("div").filter(".sub1").css("border", "3px solid black")
+                $("div").not(".sub1 , .sub2").css("border", "3px solid black")
+            })
+        })
+    </script>
+
+    <style>
+        div {
+            border: 2px solid red;
+
+        }
+
+        .div1 {
+            background-color: green;
+            height: 150px;
+            border: 2px solid red;
+        }
+
+        .div2 {
+            background-color: green;
+            height: 150px;
+            border: 2px solid red;
+        }
+
+        .sub1 {
+            background-color: yellowgreen;
+            height: 80px;
+            border: 2px solid red;
+        }
+
+        .subin2 {
+            background-color: yellow;
+            height: 80px;
+            border: 2px solid red;
+        }
+
+        .sub-in1,
+        .sub-in2 {
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn">Check</button>
+    <hr>
+    <div class="div1">div1
+        <div class="sub1">sub1
+            <div class="sub-in1">subin1</div>
+            <div class="sub-in2">subin2</div>
+        </div>
+        <div class="sub2">sub2</div>
+        <div class="sub3">sub3</div>
+    </div>
+    <br><br>
+    <div class="div2">div2
+        <div class="subin2">subin2</div>
+    </div>
+</body>
+
+</html>

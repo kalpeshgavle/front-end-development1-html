@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>dimensionFunction in jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            let test = "";
+            // it will calculate height/width of content
+            test += "height is " + $(".div1").height() + "<br>";
+            test += "width is " + $(".div1").width() + "<br>";
+
+
+            // it will calculate height/width of content + both side padding
+            test += "innerheight is " + $(".div1").innerHeight() + "<br>";
+            test += "innerwidth is " + $(".div1").innerWidth() + "<br>";
+
+            // it will calculate height/width of content + both side padding + both side border
+            test += "outerheight is " + $(".div1").outerHeight() + "<br>";
+            test += "outerwidth is " + $(".div1").outerWidth() + "<br>";
+
+            $(".div1").html(test);
+
+        })
+    </script>
+    <style>
+        .div1 {
+            height: 300px;
+            width: 200px;
+            padding: 10px;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+</body>
+
+</html>
