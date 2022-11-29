@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luscious a Restaurant Category</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media576.css">
+    <link rel="stylesheet" href="css/media768.css">
+    <link rel="stylesheet" href="css/media992.css">
+</head>
+
+<body>
+    <header>
+        <div class="back-img">
+            <div class="content">
+                <div class="left">
+                    <span class="fa-solid fa-location-dot"></span>
+                    <p>Parma Via Modena,BO, Italy</p>
+
+                    <span class="fa-regular fa-envelope"></span>
+                    <p>info@example.com </p>
+                </div>
+                <div class="right">
+                    <div class="icn"> <span class="fa-brands fa-facebook-f"></span></div>
+                    <div class="icn"> <span class="fa-brands fa-google-plus-g"></span></div>
+                    <div class="icn"><span class="fa-brands fa-twitter"></span></div>
+                    <div class="icn"> <span class="fa-brands fa-instagram"></span></div>
+                    <button id="search-tab" class="s-btn">
+                        <span class="fa-solid fa-magnifying-glass"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="search-here">
+                <input type="text" placeholder="Click enter after typing..." class="search-area" id="search-btn">
+            </div>
+
+            <div class="navbar">
+                <div class="logo"><a href="index.html">
+                        <p>Luscious</p>
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#history">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li class="hover"><a href="#">Dropdown <span class="fa-solid fa-angle-down"></span></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="#sp">Menu</a></li>
+                                    <li><a href="#booking">Booking</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <button id="nav-btn" class="nav-btn-design"><span class="fa-solid fa-bars"></span></button>
+            </div>
+            <div class="mid-text">
+                <div class="img-text">
+                    <h1>Come hungry. <span>&nbsp;Leave&nbsp;</span> happy.</h1>
+                    <p>Small change,Big differences.</p>
+                </div>
+                <div class="btn">
+                    <button>Read More <span class="fa-solid fa-caret-right"></span></button>
+                    <button>Contact Us <span class="fa-solid fa-caret-right"></span></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- script for search button text area -->
+        <script>
+            let btn = document.getElementById("search-tab");
+            let searchbar = document.querySelector(".search-here");
+            // let navBar = document.querySelector(".navbar");
+
+            btn.addEventListener("click", function () {
+                searchbar.classList.toggle("search-here-toggle");
+                document.getElementById("search-btn").focus();
+                // navBar.classList.toggle("nav-opacity")
+
+                if (searchbar.classList.contains("search-here-toggle") == true) {
+                    btn.classList.remove("fa-magnifying-glass");
+                    // btn.classList.add("fa-xmark")
+                    document.getElementById("search-tab").innerHTML = "<span class='fa-solid fa-xmark'></span>";
+                } else {
+                    // btn.classList.add("fa-magnifying-glass")
+                    btn.classList.remove("fa-xmark");
+                    document.getElementById("search-tab").innerHTML = "<span class='fa-solid fa-magnifying-glass'></span>";
+                }
+            })
+        </script>
+
+        <!-- script for menu button -->
+        <script>
+            let navbtn = document.getElementById("nav-btn");
+            let navmenu = document.querySelector("ul");
+
+            navbtn.addEventListener("click", function () {
+                navmenu.classList.toggle("ul-click");
+            })
+        </script>
+
+    </header>
+
+
+
+    <div class="history" id="history">
+        <div class="text-left">
+            <h1>OUR INTERESTING HISTORY</h1>
+        </div>
+        <div class="text-right">
+            <p>Etiam faucibus viverra libero vel efficitur. Ut semper nisl ut laoreet ultrices. Maecenas dictum arcu
+                purus,
+                sit amet volutpat purus viverra sit amet. Quisque lacinia quam sed tortor interdum, malesuada congue
+                nunc
+                ornare. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In semper
+                lorem eget tortor pulvinar ultricies.</p>
+            <p>Etiam faucibus viverra libero vel efficitur. Ut semper nisl ut laoreet ultrices. Maecenas dictum arcu
+                purus,
+                sit amet volutpat purus viverra sit amet. Quisque lacinia quam sed tortor interdum, malesuada congue
+                nunc
+                ornare. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In semper
+                lorem eget tortor pulvinar ultricies.</p>
+        </div>
+    </div>
+    <div class="his-gal">
+        <button> <span class="fa-solid fa-angle-left"></span></button>
+        <img src="images/gal1.jpg" alt="">
+        <img src="images/gal2.jpg" alt="">
+        <img src="images/gal3.jpg" alt="">
+        <img src="images/gal4.jpg" alt="">
+        <button> <span class="fa-solid fa-angle-right"></span></button>
+    </div>
+    <div class="services" id="services">
+        <div class="ser-head">
+            <h1>OUR SERVICES</h1>
+            <p>Lorem ipsum dolor sit amet,vehicula vel sapien et</p>
+        </div>
+        <div class="ser-details">
+            <div class="detail1">
+                <span class="fa-solid fa-spoon"></span>
+                <h3>Fresh Products</h3>
+                <p>Duis sit amet posuere justo, sit amet finibus urna. Aenean elementum diam nec laoreet sodales.</p>
+            </div>
+            <div class="detail1">
+                <span class="fa-brands fa-apple"></span>
+                <h3>Healthy Food</h3>
+                <p>Duis sit amet posuere justo, sit amet finibus urna. Aenean elementum diam nec laoreet sodales.</p>
+            </div>
+            <div class="detail1">
+                <span class="fa-solid fa-home"></span>
+                <h3>Traditional Methods</h3>
+                <p>Duis sit amet posuere justo, sit amet finibus urna. Aenean elementum diam nec laoreet sodales.</p>
+            </div>
+            <div class="detail1">
+                <span class="fa-solid fa-calendar-days"></span>
+                <h3>Advance Booking</h3>
+                <p>Duis sit amet posuere justo, sit amet finibus urna. Aenean elementum diam nec laoreet sodales.</p>
+            </div>
+            <div class="detail1">
+                <span class="fa-regular fa-smile"></span>
+                <h3>Best Chefs</h3>
+                <p>Duis sit amet posuere justo, sit amet finibus urna. Aenean elementum diam nec laoreet sodales.</p>
+            </div>
+            <div class="detail1">
+                <span class="fa-solid fa-child-reaching"></span>
+                <h3>150 Tables</h3>
+                <p>Duis sit amet posuere justo, sit amet finibus urna. Aenean elementum diam nec laoreet sodales.</p>
+            </div>
+        </div>
+    </div>
+    <div class="chef">
+        <div class="chef-img">
+            <img src="images/chef.jpg" alt="">
+        </div>
+        <div class="chef-text">
+            <h1>For Good Taste</h1>
+            <p>Nulla sodales efficitur consequat. Maecenas mi diam, imperdiet consectetur ultricies nec, convallis sit
+                amet turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+    <div class="specialmenu" id="sp">
+        <h1>SPECIAL MENU</h1>
+        <div class="head">
+            <button>BREAKFAST</button>
+            <button>LUNCH</button>
+            <button>TODAY SPECIALS</button>
+            <button>DRINKS</button>
+        </div>
+        <div class="sp-items">
+            <div class="item1">
+                <img src="images/gal1.jpg" alt="">
+                <div class="img-spec">
+                    <h2>LOREM IPSUM DOLOR............</h2>
+                    <p>taque Earum Rerum Hic Tenetur</p>
+                </div>
+                <div class="price">$ 50</div>
+            </div>
+            <div class="item1">
+                <img src="images/gal2.jpg" alt="">
+                <div class="img-spec">
+                    <h2>LOREM IPSUM DOLOR............</h2>
+                    <p>taque Earum Rerum Hic Tenetur</p>
+                </div>
+                <div class="price">$ 30</div>
+            </div>
+            <div class="item1">
+                <img src="images/gal3.jpg" alt="">
+                <div class="img-spec">
+                    <h2>LOREM IPSUM DOLOR............</h2>
+                    <p>taque Earum Rerum Hic Tenetur</p>
+                </div>
+                <div class="price">$ 80</div>
+            </div>
+            <div class="item1">
+                <img src="images/gal4.jpg" alt="">
+                <div class="img-spec">
+                    <h2>LOREM IPSUM DOLOR............</h2>
+                    <p>taque Earum Rerum Hic Tenetur</p>
+                </div>
+                <div class="price">$ 25</div>
+            </div>
+            <div class="item1">
+                <img src="images/gal5.jpg" alt="">
+                <div class="img-spec">
+                    <h2>LOREM IPSUM DOLOR............</h2>
+                    <p>taque Earum Rerum Hic Tenetur</p>
+                </div>
+                <div class="price">$ 10</div>
+            </div>
+            <div class="item1">
+                <img src="images/gal6.jpg" alt="">
+                <div class="img-spec">
+                    <h2>LOREM IPSUM DOLOR............</h2>
+                    <p>taque Earum Rerum Hic Tenetur</p>
+                </div>
+                <div class="price">$ 25</div>
+            </div>
+        </div>
+    </div>
+    <div class="sp-services">
+        <div class="head-left">
+            <h1>SPECIAL SERVICES</h1>
+        </div>
+        <div class="info-right">
+            <div class="info1">
+                <h3>Best Chef</h3>
+                <p>Duis sit amet posuere justo, sit amet finibus urna. Aenean elementum diam nec laoreet sodales. Morbi
+                    vulputate tempor nisl nec tristique.</p>
+            </div>
+            <div class="info1">
+                <h3>150 Tables</h3>
+                <p>Duis sit amet posuere justo, sit amet finibus urna. Aenean elementum diam nec laoreet sodales. Morbi
+                    vulputate tempor nisl nec tristique.</p>
+            </div>
+            <div class="info1">
+                <h3>Card Payment</h3>
+                <p>Duis sit amet posuere justo, sit amet finibus urna. Aenean elementum diam nec laoreet sodales. Morbi
+                    vulputate tempor nisl nec tristique.</p>
+            </div>
+            <div class="info1">
+                <h3>Special Offers</h3>
+                <p>Duis sit amet posuere justo, sit amet finibus urna. Aenean elementum diam nec laoreet sodales. Morbi
+                    vulputate tempor nisl nec tristique.</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallery" id="gallery">
+        <div class="gal-img">
+            <div class="img">
+                <img src="images/gal1.jpg" alt="">
+                <div class="text">
+                    <h1>heading Here</h1>
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/gal2.jpg" alt="">
+                <div class="text">
+                    <h1>heading Here</h1>
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/gal3.jpg" alt="">
+                <div class="text">
+                    <h1>heading Here</h1>
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/gal4.jpg" alt="">
+                <div class="text">
+                    <h1>heading Here</h1>
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/gal5.jpg" alt="">
+                <div class="text">
+                    <h1>heading Here</h1>
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/gal6.jpg" alt="">
+                <div class="text">
+                    <h1>heading Here</h1>
+                </div>
+            </div>
+            <h1>OUR SPECIALS</h1>
+        </div>
+        <div class="info">
+            <div class="info-left">
+                <p>Etiam faucibus viverra libero vel efficitur. Ut semper nisl ut laoreet ultrices. Maecenas dictum arcu
+                    purus, sit amet volutpat purus viverra sit amet. Quisque lacinia quam sed tortor interdum, malesuada
+                    congue nunc ornare. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus. In semper lorem eget tortor pulvinar ultricies.</p>
+            </div>
+            <div class="info-right">
+                <p>Etiam faucibus viverra libero vel efficitur. Ut semper nisl ut laoreet ultrices. Maecenas dictum arcu
+                    purus, sit amet volutpat purus viverra sit amet. Quisque lacinia quam sed tortor interdum, malesuada
+                    congue nunc ornare. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus. In semper lorem eget tortor pulvinar ultricies.</p>
+            </div>
+        </div>
+    </div>
+    <div class="booking" id="booking">
+        <h1>PREARRANGE A TABLE.</h1>
+        <div class="input">
+            <input type="time" name="" id="">
+            <input type="date" name="" id="">
+            <select name="" id="">
+                <option value="">No. of People</option>
+                <option value="">1 Person</option>
+                <option value="">1 People</option>
+                <option value="">2 People</option>
+                <option value="">3 People</option>
+                <option value="">4 People</option>
+                <option value="">5 People</option>
+                <option value="">More</option>
+            </select>
+        </div>
+        <div class="txt-btn">
+            <div class="Text">
+                <div class="txt1">
+                    <span class="fa-regular fa-square-check"></span>
+                    <p>Over 10,000 restaurants Worldwide</p>
+                </div>
+                <div class="txt1">
+                    <span class="fa-regular fa-square-check"></span>
+                    <p>No booking fees</p>
+                </div>
+            </div>
+            <div class="btn">
+                <button>BOOK A TABLE</button>
+            </div>
+        </div>
+    </div>
+    <div class="com-sec">
+        <div class="com-head">
+            <h1>COMMENTS FROM OUR CUSTOMERS</h1>
+            <p>Lorem ipsum dolor sit amet,vehicula vel sapien et</p>
+        </div>
+        <div class="com-detail">
+            <div class="detail">
+                <span class="fa-solid fa-quote-right"></span>
+                <div class="txt">
+                    <h4>Paul Demichev</h4>
+                    <p>Client,Some Company</p>
+                    <p>Nulla sodales efficitur consequat. Maecenas mi diam, imperdiet consectetur ultricies nec,
+                        convallis sit amet turpis.</p>
+                </div>
+            </div>
+            <div class="detail">
+                <span class="fa-solid fa-quote-right"></span>
+                <div class="txt">
+                    <h4>Oleg Topanic</h4>
+                    <p>Client,Some Company</p>
+                    <p>Nulla sodales efficitur consequat. Maecenas mi diam, imperdiet consectetur ultricies nec,
+                        convallis sit amet turpis.</p>
+                </div>
+            </div>
+            <div class="detail">
+                <span class="fa-solid fa-quote-right"></span>
+                <div class="txt">
+                    <h4>Julia Usina</h4>
+                    <p>Client,Some Company</p>
+                    <p>Nulla sodales efficitur consequat. Maecenas mi diam, imperdiet consectetur ultricies nec,
+                        convallis sit amet turpis.</p>
+                </div>
+            </div>
+            <div class="detail">
+                <span class="fa-solid fa-quote-right"></span>
+                <div class="txt">
+                    <h4>Serdyuk Elena</h4>
+                    <p>Client,Some Company</p>
+                    <p>Nulla sodales efficitur consequat. Maecenas mi diam, imperdiet consectetur ultricies nec,
+                        convallis sit amet turpis.</p>
+                </div>
+            </div>
+            <div class="detail">
+                <span class="fa-solid fa-quote-right"></span>
+                <div class="txt">
+                    <h4>Kulikov Vlad </h4>
+                    <p>Client,Some Company</p>
+                    <p>Nulla sodales efficitur consequat. Maecenas mi diam, imperdiet consectetur ultricies nec,
+                        convallis sit amet turpis.</p>
+                </div>
+            </div>
+            <div class="detail">
+                <span class="fa-solid fa-quote-right"></span>
+                <div class="txt">
+                    <h4>Andrey Tikhonov</h4>
+                    <p>Client,Some Company</p>
+                    <p>Nulla sodales efficitur consequat. Maecenas mi diam, imperdiet consectetur ultricies nec,
+                        convallis sit amet turpis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="contact" id="contact">
+            <h1>CONTACT US</h1>
+            <div class="form-info">
+                <div class="form">
+                    <h3>Please fill this form to contact with us.</h3>
+                    <div>
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Telephone">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <textarea name="" id="" cols="0" rows="0">Message....</textarea>
+                    <div class="btn">
+                        <button type="submit">SUBMIT</button>
+                        <button type="reset">CLEAR</button>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <h3>Contact Info</h3>
+                    <div class="info1">
+                        <span class="fa-solid fa-home"></span>
+                        <div class="info1-txt">
+                            <h2>Visit us</h2>
+                            <p>Parma Via Modena,BO, Italy</p>
+                        </div>
+                    </div>
+                    <div class="info1">
+                        <span class="fa-solid fa-envelope"></span>
+                        <div class="info1-txt">
+                            <h2>Mail us</h2>
+                            <p><a href="">info@example.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info1">
+                        <span class="fa-solid fa-phone"></span>
+                        <div class="info1-txt">
+                            <h2>Call us</h2>
+                            <p>+18044261149</p>
+                        </div>
+                    </div>
+                    <div class="info1">
+                        <span class="fa-solid fa-clock"></span>
+                        <div class="info1-txt">
+                            <h2>Work hours</h2>
+                            <p>Mon-Sat 09:00 AM - 05:00PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59410.75560114159!2d72.92123728552173!3d21.461757955810473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be03bb690444709%3A0x36ad43175adf7812!2sKosamba%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1665409963080!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="copy">
+            <p>&copy; 2022 Luscious. All rights reserved | Design by <span>kalpesh</span>.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

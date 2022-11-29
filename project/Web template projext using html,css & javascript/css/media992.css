@@ -1,0 +1,353 @@
+@media (min-width:769px) and (max-width:1200px){
+   
+    .history {
+        flex-direction: row;
+    }
+    
+    .history .text-left {
+        display: flex;
+    width: 100%;
+    margin-top: 10px;
+    padding: 30px;
+    align-items: center;
+    
+    }
+
+    .history .text-right p {
+        margin-bottom: 30px;
+        line-height: 33px;
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+    .history .text-left h1 {
+        font-size: 0.5in;
+        margin: 0px 0px 0px 10px;
+        padding: 0px;
+    }
+
+    .history .text-right {
+        width: 100%;
+        padding: 10px;
+        letter-spacing: 2px;
+        opacity: 0.6;
+    }
+    
+    .his-gal {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .his-gal button{
+        display: none;
+    }
+    .his-gal img {
+        margin-left: 2px;
+        margin-right: 2px;
+        height: 200px;
+        width: 20%;
+        border: 6px solid whitesmoke;
+        border-radius: 6px;
+        box-shadow: 1px 1px 5px gray;
+    }
+    
+    .services {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    .services .ser-details 
+    {
+        display: grid;
+        gap: 0px;
+        row-gap: 45px;
+        margin-top: 60px;
+        width: 100%;
+        margin-left: 0px;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+    }
+    .chef{
+        height: 100%;
+        margin-top: 100px;
+        background-color: #FAF8F9;
+        width: 100%;
+        display: flex;
+        aLIGN-items: center;
+        flex-direction: row;
+    }
+    .chef .chef-img{
+        margin-left: 0px;
+       width: 100%;
+       text-align: center;
+
+    }
+    .chef .chef-img img{
+       margin: 0px;
+       width: 95%;
+
+    }
+    .chef .chef-text {
+        display: flex;
+        width: 100%;
+        margin-left: 0px;
+        margin: 30px;
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .specialmenu{
+        margin-top: 20px;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+    }
+    .specialmenu .head {
+        display: flex;
+        margin-top: 60px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .specialmenu .head button {
+        font-size: 20px;
+        background-color: transparent;
+        color: white;
+        width: 25%;
+        height: 80px;
+        padding: 0;
+        margin: 0px;
+        cursor: pointer;
+    }
+
+    .specialmenu .sp-items{
+        display: grid;
+    border: 0.6px solid gray;
+    margin-top: 5px;
+    gap: 0px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 0px;
+    margin-right: 0px;
+    }
+    .sp-items .item1 img{
+        height: 120px;
+        width: 120px;
+        margin-bottom: 40px;
+        padding: 10px;
+        border-radius: 50%;
+        margin-top: 20px;
+        margin-left: 10px;
+        border: 2px solid white;
+    }
+ 
+    .sp-services{
+        padding: 0px;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: row;
+    }
+    .sp-services .head-left{
+        display: flex;
+        padding-left: 20px;
+        width: 50%;
+        justify-content: center;
+    }
+    .sp-items .item1 .img-spec {
+        color: white;
+        padding: 0px;
+        margin: 10px;
+    }
+    .sp-items .item1 .price {
+        margin: 10px;
+        padding: 20px;
+    }
+.sp-services .head-left h1 {
+    font-size: 0.55in;
+    padding: 20px;
+}
+    .sp-services .info-right{
+        display: grid;
+        width: 100%;
+        row-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .sp-services .info-right .info1 h3 {
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+    }
+    .sp-services .info-right .info1 {
+        width: 100%;
+        padding: 0px 10px 0px 10px;
+    }
+    .gallery{
+        padding: 0px;
+    }
+
+    .gallery .gal-img{
+        display: grid;
+        padding: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+        justify-items: stretch;
+        align-content: center
+    }
+    
+    .gallery .gal-img img{
+        height: 100%;
+        width: 100%;
+    }
+    .gallery .gal-img .img .text h1 {
+        font-size: 20px;
+        padding: 5px;
+    }
+    .gallery .gal-img .img:hover .text {
+        background-color: orange;
+        display: block;
+        bottom: 0;
+        height: 21%;
+        width: 100%;
+    }
+    .gallery .gal-img h1{
+        font-size: 0.55in;
+    padding: 10px;
+    letter-spacing: 2px;
+    line-height: 55px;
+    color: rgb(57, 55, 55);
+    }
+    
+    .info{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .info .info-left{
+        align-items: center;
+    height: 100%;
+    padding: 10px;   
+    }
+    
+    .info .info-right{
+        align-items: center;
+        height: 100%;
+        padding: 10px;
+    }
+    .booking .input{
+        width: 100%;
+        display: flex;
+        padding-bottom: 50px;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    .booking .input input, select {
+        width: 30%;
+        margin-top: 8px;
+        padding-left: 10px;
+        height: 40px;
+        color: white;
+        background-color: transparent;
+        border: 1px solid white;
+        font-size: 20px;
+    }
+    .booking h1 {
+        text-align: center;
+        font-size: 0.5in;
+        color: white;
+        padding: 80px 20px 45px 20px;
+    }
+    .booking .txt-btn{
+       display: flex;
+       width: 100%;
+       gap: 0;
+    }
+    .booking .txt-btn .txt1 {
+        padding: 0px 34px;
+        display: flex;
+        width: 100%;
+        padding-right: 0px;
+        justify-content: flex-start;
+    }
+    .booking .txt-btn .Text {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .booking .txt-btn .btn{
+        width: 100%;
+        text-align: center;
+    }
+    .booking .txt-btn .btn button{
+        width: 80%;
+    }
+    .com-sec .com-detail{
+        display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    margin: 10px;
+    }
+    .foot .contact .form-info .form{
+        width: 100%;
+        padding-left: 30px;
+        text-align: center;
+    }
+    .foot .contact .form-info .form div{
+        width: 100%;
+        display: flex;
+        gap: 0%;
+        margin: 0px;
+        text-align: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+    }
+    .foot .contact .form-info .form h3 {
+        color: orange;
+        padding: 10px 0px 30px 28px;
+        font-size: 22px;
+        font-weight: 400;
+        text-align: start;
+    }
+    .foot .contact .form-info .form input[type='text'] {
+        height: 60px;
+        width: 42%;
+        padding: 10px;
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .foot .contact .form-info .form .btn {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .foot .contact .form-info .form .btn button {
+        width: 42%;
+    }
+    .foot .contact .form-info .info{
+        padding-left: 35px;
+    }
+    .foot .contact .form-info {
+        display: flex;
+        gap: 0;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        justify-content: center;
+        flex-direction: row;
+        align-items: baseline;
+    
+    }
+
+    .foot .contact .form-info .form textarea{
+        width: 90%;
+    }
+    
+}
