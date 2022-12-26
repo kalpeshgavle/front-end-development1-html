@@ -1,0 +1,75 @@
+.back-img {
+    background-image: linear-gradient(to right, rgb(3 15 39 / 69%), rgb(3 15 39 / 70%)), url(images/bg1.jpg);
+    z-index: 0;
+    position: relative;
+    display: grid;
+    align-items: center;
+    background-size: cover;
+    -ms-background-size: cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    min-height: 710px;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.box-wrap-grid {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr) */
+    grid-template-columns: auto 1fr;
+    gap: 30px;
+}
+
+.info-head {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -17%;
+}
+
+.box-wrap {
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.box-wrap .info p {
+    margin: 0;
+    font-size: 17px;
+}
+
+.box-wrap .p2 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 28px;
+    color: #666;
+}
+
+.box-wrap-grid .icon {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    text-align: center;
+}
+
+.box-wrap-grid .icon span.fa {
+    color: #2caee2;
+    font-size: 25px;
+    line-height: 70px;
+}
+
+.left-head {
+    font-size: 13px;
+    color: #2caee2;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.left-desc {
+    font-size: 40px;
+    font-weight: 700;
+}
