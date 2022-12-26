@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Web Template using Bootstrap</title>
+    <!-- bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- bootstrap js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- fontawsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/width1024.css">
+    <link rel="stylesheet" href="css/width768.css">
+    <link rel="stylesheet" href="css/width576.css">
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- bxSlider cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+    <!-- bxSlider css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css" />
+
+    <!-- bx-slider jquery code -->
+    <script>
+        $(document).ready(function () {
+            $(".bxslider").bxSlider({
+            });
+        })
+    </script>
+
+</head>
+
+<body>
+    <!-- nav upper section -->
+    <section class="nav-upper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 py-2 upr-1">
+                    <a href="#" class="uper-atext"><span class="fa fa-clock pe-2"></span>Monday - Friday: 10:00 -
+                        18:00</a>
+                    <a href="#" class="uper-atext"><span class="fa fa-envelope  pe-2 ps-4"></span>
+                        mail@company.com</a>
+                    <a href="#" class="uper-atext"><span class="fa fa-phone  pe-2 ps-4"></span>+142 5897555</a>
+                </div>
+                <div class="col-sm-4 upr-2 col-auto py-2 text-end">
+                    <a href="#" class="uper-atext"><span class="fa-brands fa-facebook-f px-2"></span></a>
+                    <a href="#" class="uper-atext"><span class="fa-brands fa-instagram px-2"></span></a>
+                    <a href="#" class="uper-atext"><span class="fa-brands fa-twitter px-2"></span></a>
+                    <a href="#" class="uper-atext"><span class="fa-brands fa-vimeo-v px-2"></span></a>
+                    <a href="#" class="uper-atext"><span class="fa-brands fa-linkedin-in px-2"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- nav main section -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand ps-1 logo" href="#">Clean<span style="color:#F45D01">Freshly</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-list" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color:#F45D01; font-weight: 600;" aria-current="page"
+                            href="#">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nav-left-text" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-left-text" href="#">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-left-text" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item nav-left-text" href="#">Blog</a></li>
+                            <li><a class="dropdown-item nav-left-text" href="#">Blog Single</a></li>
+                            <li><a class="dropdown-item nav-left-text" href="#">Landing Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-left-text">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn1" type="submit">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- slider section  -->
+    <section class="slider">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/banner1.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="slider-text">
+                        <h6>Fast and Efficient</h6>
+                        <h5>Quality service for quality homes</h5>
+                        <button class="btn2" href="#">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner2.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="slider-text">
+                        <h6>Fast and Efficient</h6>
+                        <h5>Quality service for quality homes</h5>
+                        <button class="btn2" href="#">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner3.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="slider-text">
+                        <h6>Fast and Efficient</h6>
+                        <h5>Quality service for quality homes</h5>
+                        <button class="btn2" href="#">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner4.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="slider-text">
+                        <h6>Fast and Efficient</h6>
+                        <h5>Quality service for quality homes</h5>
+                        <button class="btn2" href="#">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- mid-section 1 -->
+    <div class="m_s-1">
+        <div class="container p-0">
+            <div class="row m_s-row">
+                <div class="col-lg-6 col-xl-4 col-sm-12 col-md-6 col-auto s-1 bg-white text-center p-5">
+                    <span class="fa fa-bath"></span>
+                    <h2 class="pt-4">Best Quality</h2>
+                    <p>Fusce rutrum quam a ultrices rhoncus. Nulla eu ipsum tempus est suscipit et vitae nulla.</p>
+                </div>
+                <div class="col-lg-6 col-xl-4 col-sm-12 col-md-6 col-auto s-center text-center p-5">
+
+                    <span class="fa fa-cogs" style="background-color:white; color:#2d7dc4;"></span>
+                    <h2 class="pt-4">Expert Advice</h2>
+                    <p>Fusce rutrum quam a ultrices rhoncus. Nulla eu ipsum tempus est suscipit et vitae nulla.</p>
+                </div>
+                <div class="col-lg-6 col-xl-4 col-sm-12 col-md-6 col-auto s-1 bg-white text-center p-5">
+                    <span class="fa fa-users"></span>
+                    <h2 class="pt-4">Labour Expertise</h2>
+                    <p>Fusce rutrum quam a ultrices rhoncus. Nulla eu ipsum tempus est suscipit et vitae nulla.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mid-section 2 -->
+    <section class="m_s-2 py-5">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-6 col-sm-12 col-auto p-3">
+                    <img class="img-fluid rounded-2" src="images/ab1.jpg">
+                </div>
+                <div class="col-lg-6 col-sm-12 col-auto p-0 p-3">
+                    <div class="img_text_left mt-2">
+                        <h6>WELCOME TO OUR CLEANFRESHLY</h6>
+                        <h3>About Our Company</h3>
+                        <p class="my-3">Excepteur sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id
+                            erat eu
+                            ullamcorper. Nunc id ipsum fringilla, gravida felis vitae. Phasellus lacinia id, sunt in
+                            culpa quis. Phasellus lacinia</p>
+                        <p class="my-3">Excepteur sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id
+                            erat eu
+                            ullamcorper. Nunc id ipsum fringilla, gravida felis vitae. Phasellus lacinia id, sunt in
+                            culpa quis. Phasellus lacinia</p>
+                        <button class="btn2 mt-4" href="#">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- quality service section -->
+
+    <section class="qua-ser">
+        <div class="container py-lg-5">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-auto">
+                    <h2>We Providing A High Quality Services</h2>
+                </div>
+                <div class="col-lg-4 col-auto">
+                    <p>Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elitFuga, suscipit totam
+                        animi consequatur saepe blanditiis.Lorem ipsum dolor sit amet,Ea consequuntur illum facere
+                        aperiam sequi optio consectetur adipisicing elit. Fuga, suscipit totam animi consequatur saepe
+                        blanditiis.</p>
+                </div>
+                <div class="col-lg-4 col-auto">
+                    <p>Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elitFuga, suscipit totam
+                        animi consequatur saepe blanditiis.Lorem ipsum dolor sit amet,Ea consequuntur illum facere
+                        aperiam sequi optio consectetur adipisicing elit. Fuga, suscipit totam animi consequatur saepe
+                        blanditiis.</p>
+                </div>
+            </div>
+            <div class="d-grid px-3 py-5 my-5">
+                <div class=" row_content">
+                    <span class="fa fa-plug"></span>
+                    <h4>Electrical Work</h4>
+                </div>
+                <div class=" row_content">
+                    <span class="fa fa-paint-brush"></span>
+                    <h4>
+                        Painting Work</h4>
+                </div>
+                <div class=" row_content">
+                    <span class="fa fa-bed"></span>
+                    <h4>Furniture Work</h4>
+                </div>
+                <div class="row_content">
+                    <span class="fa fa-shield-alt"></span>
+                    <h4>
+                        Washing Work</h4>
+                </div>
+                <div class=" row_content">
+                    <span class="fa fa-paragraph"></span>
+                    <h4>Modular Work</h4>
+                </div>
+                <div class=" row_content">
+                    <span class="fa fa-unlink"></span>
+                    <h4>Carpet Work</h4>
+                </div>
+            </div>
+    </section>
+
+    <!-- our service section -->
+    <section class="features-4">
+        <div class="py-5">
+            <div class="container py-lg-5">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-auto text-center fea-1">
+                        <div class="out-div">
+                            <div class="feature-1 pb-2">
+                                <span class="fa fa-bath"></span>
+                                <h5>Plumbing</h5>
+                                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
+                                    consectetur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-auto text-center fea-1">
+                        <div class="out-div">
+                            <div class="feature-1 pb-2">
+                                <span class="fa-solid fa-hands-asl-interpreting"></span>
+                                <h5>Repairs</h5>
+                                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
+                                    consectetur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-auto text-center fea-1">
+                        <div class="out-div">
+                            <div class="feature-1 pb-2">
+                                <span class="fa fa-fire-extinguisher"></span>
+                                <h5>Spring</h5>
+                                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
+                                    consectetur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-auto text-center fea-1">
+                        <div class="out-div">
+                            <div class="feature-1 pb-2">
+                                <span class="fa fa-gavel"></span>
+                                <h5>Carpenter</h5>
+                                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
+                                    consectetur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- service provider -->
+    <section class="ser-pro">
+        <div class="ser-img">
+            <div class="img-info">
+                <div class="container py-5">
+                    <div class="row py-5">
+                        <div class="col-lg-8 col-auto px-0">
+                            <h1 class="text-white">Professional Cleaning Services Provider</h1>
+                            <p class="top-txt">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia sed deserunt
+                                mollitanim id est laborum mollit anim id est nulla.</p>
+                            <div class="row align-items-center px-0 pt-4 w-100 mx-auto">
+                                <div class="col-lg-4 col-md-6 px-4 py-3">
+                                    <div class="outer-continfo-box">
+                                        <div class="cont-info text-center bg-white py-4">
+                                            <span class=" fa fa-phone pb-2"></span>
+                                            <h4 class="py-2 fs-5">Phone</h4>
+                                            <p class="fs-5">+142 5897555</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 px-4 py-3">
+                                    <div class="outer-continfo-box">
+                                        <div class="cont-info text-center bg-white py-4">
+                                            <span class="fa-regular fa-envelope pb-2"></span>
+                                            <h4 class="py-2 fs-5">Email</h4>
+                                            <p class="fs-5">mail@company.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 px-4 py-3">
+                                    <div class="outer-continfo-box">
+                                        <div class="cont-info text-center bg-white py-4">
+                                            <span class="fa-regular fa-clock pb-2"></span>
+                                            <h4 class="py-2 fs-5">Opening Hours</h4>
+                                            <p class="fs-5">10.00 to 18.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-12 col-auto pt-4">
+                            <form class="form-control pt-4 pb-4 px-5">
+                                <div class="row py-2">
+                                    <label for="name" class="py-2">First Name</label>
+                                    <input type="text" class="form-control mx-2 rounded-5" required>
+                                </div>
+                                <div class="row py-2">
+                                    <label for="name" class="py-2">Last Name</label>
+                                    <input type="text" class="form-control mx-2 rounded-5" required>
+                                </div>
+                                <div class="row py-2 pb-3">
+                                    <label for="name" class="py-2">Password</label>
+                                    <input type="password" class="form-control mx-2 rounded-5" required>
+                                </div>
+                                <div class="row py-4">
+                                    <input type="submit" value="Get Started"
+                                        class="form-control btn-sbmt py-2 mx-2 rounded-5" required>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS section -->
+    <section class="testino">
+        <div class="container pt-lg-3 mt-lg-3 pb-lg-5 mb-lg-5 pb-sm-5 mb-sm-5 pb-md-5 mb-md-5">
+            <div class="head-testi row justify-content-center text-center py-2 my-2">
+                <div class="head-text w-50">
+                    <p class="h-text">TESTIMONIALS</p>
+                    <h2>What Our Clients Say</h2>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit sunt in culpa qui
+                        officia sed deserunt
+                        mollit anim id est laborum mollit anim id est nulla.</p>
+                </div>
+            </div>
+            <!-- carousal slider -->
+            <div class="bxslider">
+                <div class="div1">
+                    <div class="msg">
+                        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit id
+                            accusantium
+                            officia quod quasi necessitatibus perspiciatis Harum error provident
+                            quibusdam tenetur.
+                        </p>
+                        <h4>Name 1</h4>
+                        <p class="p2">Company Name</p>
+                    </div>
+                    <div class="img1">
+                        <img src="images/c1.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="div1">
+                    <div class="msg">
+                        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit id
+                            accusantium
+                            officia quod quasi necessitatibus perspiciatis Harum error provident
+                            quibusdam tenetur.
+                        </p>
+                        <h4>Name 2</h4>
+                        <p class="p2">Company Name</p>
+                    </div>
+                    <div class="img1">
+                        <img src="images/c2.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="div1">
+                    <div class="msg ">
+                        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit id
+                            accusantium
+                            officia quod quasi necessitatibus perspiciatis Harum error provident
+                            quibusdam tenetur.
+                        </p>
+                        <h4>Name 3</h4>
+                        <p class="p2">Company Name</p>
+                    </div>
+                    <div class="img1">
+                        <img src="images/c3.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="div1">
+                    <div class="msg ">
+                        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit id
+                            accusantium
+                            officia quod quasi necessitatibus perspiciatis Harum error provident
+                            quibusdam tenetur.
+                        </p>
+                        <h4>Name 4</h4>
+                        <p class="p2">Company Name</p>
+                    </div>
+                    <div class="img1">
+                        <img src="images/c4.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="row foot-top py-3 align-items-center">
+                <div class="col-lg-6 left-cont">
+                    <h2><a class="foot-logo" href="index.html">Clean<span>Freshly</span></a></h2>
+                </div>
+                <div class="col-lg-6 right-cont">
+                    <span class="fa-brands fa-facebook-f"></span>
+                    <span class="fa-brands fa-twitter"></span>
+                    <span class="fa-brands fa-google-plus-g"></span>
+                    <span class="fa-brands fa-linkedin-in"></span>
+                    <span class="fa-brands fa-instagram"></span>
+                </div>
+            </div>
+            <div class="row foot-mid text-white pt-5 pb-4">
+                <div class="col-lg-2 col-md-6 col-auto ">
+                    <h6>Extra Links</h6>
+                    <ul class="list-1">
+                        <li>About Company</li>
+                        <li>Our Services</li>
+                        <li>Recent Projects List</li>
+                        <li>Latest News Blog</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-5">
+                    <h6>List Of Services</h6>
+                    <ul class="list-1 list-2">
+                        <li>Plumbing</li>
+                        <li> Carpenter</li>
+                        <li> Electrician</li>
+                        <li> Wall Painting</li>
+                        <li> Furniture Moving</li>
+                        <li> House Cleaning</li>
+                        <li> Replacing Wires</li>
+                        <li> AC & Refrigerator</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6>Support</h6>
+                    <ul class="list-1">
+                        <li> Documentation</li>
+                        <li> Privacy Policy</li>
+                        <li> Terms Of Service</li>
+                        <li>24/7 Support</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6>Working Hours</h6>
+                    <ul class="last-list">
+                        <li> Monday : 8AM - 6AM</li>
+                        <li> Tuesday : 8AM - 6AM</li>
+                        <li> Wednesday : 8AM - 6AM</li>
+                        <li> Thursday - Friday : 8AM - 6AM</li>
+                        <li> Sunday : Closed</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row foot-bottom text-center py-4">
+                <p>© 2020 Cleanfreshly. All rights reserved | Designed by KALPESH</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html

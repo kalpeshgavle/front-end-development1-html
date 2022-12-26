@@ -1,0 +1,128 @@
+@media(max-width:576px) {
+    .nav-upper .upr-1 {
+        display: none;
+    }
+
+    .nav-upper .upr-2 {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .slider img {
+        height: 320px;
+    }
+
+    .m_s-1 {
+        margin-left: 0px;
+        margin-top: 0;
+    }
+
+    .slider .slider-text {
+        top: 65px;
+        width: 250px;
+        padding: 5px;
+        left: 39px;
+    }
+
+    .slider .slider-text h5 {
+        font-size: 25px;
+        font-weight: 700;
+        padding-bottom: 25px;
+    }
+
+    .m_s-2 {
+        margin: 0;
+        padding: 10px 0px 10px 0px !important;
+    }
+
+    .m_s-2 .row {
+        padding: 10px 0px 10px 0px !important;
+    }
+
+    .qua-ser h2 {
+        font-size: 24px;
+    }
+
+    .qua-ser .d-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .qua-ser h4 {
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .ser-pro .img-info h1 {
+        font-size: 33px;
+
+    }
+
+    .testino .head-text {
+        width: 100% !important;
+    }
+
+    .testino .head-text p {
+        margin-bottom: 0px;
+    }
+
+    .testino .head-testi {
+        padding: 20px 0px !important;
+        margin: 20px 0px !important;
+    }
+
+    .bxslider .div1 {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        width: 293.8px;
+    }
+
+    .bxslider .msg {
+        display: block;
+        padding: 20px 27px;
+    }
+
+    .bxslider img {
+        width: 80%;
+        margin: 5px auto;
+        border-radius: 10px;
+    }
+
+    .bx-wrapper:last-child {
+        max-width: 100% !important;
+        height: 540px;
+        margin: auto;
+        border: none !important;
+    }
+
+    .bx-prev,
+    .bx-next {
+        display: none;
+    }
+
+    .bx-viewport {
+        height: 550px !important;
+    }
+
+    .testino .container {
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+    }
+
+    .footer .foot-top {
+        text-align: center;
+    }
+
+    .footer .foot-top h2 {
+        font-size: 30px;
+        padding: 6px 0px;
+
+    }
+
+    .footer .foot-top .right-cont {
+        text-align: center;
+    }
+
+}
