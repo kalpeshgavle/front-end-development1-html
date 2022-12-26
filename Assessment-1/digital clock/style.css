@@ -1,0 +1,68 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+/* font-family: 'Varela', sans-serif; */
+body {
+    font-family: 'Varela', sans-serif;
+
+}
+
+.cont {
+    position: relative;
+    height: 125px;
+    width: 500px;
+}
+
+.container {
+    background: linear-gradient(to bottom right, rgb(40 228 224) 23%, #c7bd05, #a912c0 65%);
+    height: 96px;
+    position: absolute;
+    width: 520px;
+    left: 498px;
+    top: 53px;
+    border-radius: 10px;
+    margin: 0px auto;
+    z-index: -1;
+}
+
+.clock {
+    background: black;
+    z-index: 1;
+    height: 77px;
+    width: 500px;
+    position: absolute;
+    left: 508px;
+    top: 62px;
+    border-radius: 10px;
+}
+
+.clock-text {
+    background: linear-gradient(to bottom right, rgb(40 228 224) 23%, #c7bd05, #a912c0 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
+    width: 500px;
+    position: absolute;
+    font-size: 61px;
+    top: 59px;
+    left: 522px;
+    font-weight: 700;
+}
+
+.container1 {
+    height: auto;
+    padding: 50px;
+    width: 530px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.container1 .month {
+    border: 7px solid #0f6a61;
+    font-size: 28px;
+    padding: 8px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    background-color: #84d0e4;
+}
