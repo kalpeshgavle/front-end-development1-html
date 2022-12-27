@@ -1,0 +1,113 @@
+.head-inner {
+    background-color: rgb(243, 77, 6);
+}
+
+.head-right a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 20px 0px 20px;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.btn-1 {
+    height: 40px;
+    width: 140px;
+    background-color: rgb(187, 84, 0);
+    border: none;
+    border-radius: 15px;
+    color: white;
+}
+
+.about-right span {
+    font-size: 145px;
+    color: rgb(243, 77, 6);
+}
+
+.btn-2 {
+    background-color: transparent;
+    border: 2px solid gray;
+}
+
+.services .d-grid {
+    /* display: grid; */
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.services .service-grid .grid-content {
+    padding: 20px 0 20px 0;
+}
+
+.services .service-grid span {
+    font-size: 35px;
+    color: rgb(243, 77, 6);
+    padding: 10px 0px;
+
+}
+
+.services .service-grid h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 0px;
+}
+
+.portfolio .container {
+    background-color: rgb(236, 233, 233);
+}
+
+.portfolio h2 {
+    text-transform: uppercase;
+}
+
+.portfolio .scroll-text p {
+    width: 50%;
+}
+
+.pricing .d-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.pricing .price-card {
+    border: 2px solid rgb(243, 77, 6);
+}
+
+.pricing .price-card .price-card-heading {
+    background-color: rgb(243, 77, 6);
+    padding: 20px;
+    color: white;
+    margin: 0;
+}
+
+.pricing .card-btn button {
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(243, 77, 6);
+}
+
+.pricing .card-btn button:hover {
+    background-color: rgb(232, 31, 31);
+}
+
+.foot-section .text-area {
+    padding: 0px 13px 0px 13px;
+}
+
+.foot-section .btn-3 {
+    height: 40px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+
+.foot-section .btn-3:hover {
+    background-color: rgb(243, 77, 6);
+    border: 2px solid white;
+    color: white;
+}

@@ -1,0 +1,9 @@
+@media(max-width:768px) {
+    .about-section-1 {
+        justify-content: center;
+    }
+
+    .services .d-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

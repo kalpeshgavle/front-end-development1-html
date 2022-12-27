@@ -1,0 +1,23 @@
+@media(max-width:576px) {
+    .head-right a {
+        color: white;
+        text-decoration: none;
+        padding: 0px 5px 0px 5px;
+    }
+
+    .nav-sec {
+        justify-content: center;
+    }
+
+    .services .d-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .portfolio .scroll-text p {
+        width: 75%;
+    }
+
+    .pricing .d-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
