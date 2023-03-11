@@ -1,0 +1,18 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu {
+    margin: 0px;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    background-color: rgb(8, 107, 146);
+}
+
+.menu li {
+    padding: 20px 10px;
+    font-size: 17px;
+    font-weight: 600;
+}
