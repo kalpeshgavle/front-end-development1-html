@@ -1,0 +1,54 @@
+.container {
+    max-width: 1200px;
+}
+
+.home-section {
+    padding-top: 80px;
+    background-image: url('https://wp.w3layouts.com/carservicing/wp-content/themes/Car-servicing/assets/images/bannerbg.jpg');
+    /* height: 300px */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Home {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.Home .home-info {
+    padding: 47px 111px 31px 0px;
+    width: 63%;
+    color: white;
+}
+
+.Home .home-info h1 {
+    font-size: 45px;
+}
+
+.Home .home-info p {
+    font-size: 20px;
+}
+
+.Home .home-request {
+    text-align: center;
+    padding: 30px 40px;
+    background-color: #fff;
+    width: 33%;
+}
+
+.read-btn {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #d92636;
+    height: 55px;
+    width: 175px;
+    transition: 0.3s all ease;
+}
+
+.read-btn:hover {
+    background-color: #b10c1a;
+    color: #fff;
+
+}

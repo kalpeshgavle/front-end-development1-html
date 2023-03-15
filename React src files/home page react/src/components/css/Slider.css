@@ -1,0 +1,37 @@
+.slider {
+    background-color: #f7f7f7
+}
+
+.slider .slider-text {
+    background-color: white;
+}
+
+.slider-flex {
+    display: flex;
+    align-items: center;
+}
+
+.bx-viewport {
+    height: 280px !important;
+}
+
+.bx-wrapper {
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 0px #ccc;
+    border: 0;
+    background: transparent;
+}
+
+.slider-left text {
+    width: 50%;
+}
+
+.main-slider {
+    width: 50%;
+}
+
+.bx-prev,
+.bx-next {
+    display: none;
+}

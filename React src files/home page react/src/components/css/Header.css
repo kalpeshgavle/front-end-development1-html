@@ -1,0 +1,65 @@
+.container {
+    max-width: 1200px;
+}
+
+.header {
+    background-color: white;
+    position: fixed;
+    width: 100%
+}
+
+.head-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.left-logo a,
+span {
+    font-size: 40px;
+    text-decoration: none;
+    color: #d92626;
+}
+
+.left-logo .logo-text {
+    font-weight: 700;
+    font-size: 30px;
+    padding-left: 5px;
+    color: black;
+}
+
+.right-menu {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.right-menu a {
+    text-decoration: none;
+    color: #999;
+    padding: 0px 10px;
+    font-size: 18px;
+
+}
+
+
+.right-menu a:hover {
+    color: #2c3038;
+}
+
+.contact-btn {
+    font-size: 18px;
+    font-weight: 600;
+    color: #d92636;
+    height: 55px;
+    width: 175px;
+    transition: 0.3s all ease;
+}
+
+.contact-btn:hover {
+    background-color: #d92636;
+    color: #fff;
+}
