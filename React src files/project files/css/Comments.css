@@ -1,0 +1,37 @@
+.bxslider1 .bx-viewport {
+    height: 259px !important;
+}
+
+.container {
+    max-width: 1200 !important;
+}
+
+.review-main {
+    display: flex;
+    /* height: 297px; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-items: stretch;
+
+}
+
+.comment-flex {
+    display: flex;
+}
+
+.comment-flex p {
+    font-size: 18px;
+}
+
+.bx-controls-direction {
+    display: none;
+}
+
+.bx-wrapper {
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 0px #ccc;
+    border: 5px solid #fff;
+    background: #fff;
+}

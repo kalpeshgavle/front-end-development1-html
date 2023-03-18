@@ -1,0 +1,38 @@
+.gallaryimg {
+    position: relative;
+    height: 200px;
+    width: 300px;
+}
+
+.gallaryimg img {
+    height: 200px;
+    width: 300px;
+}
+
+.imgHeading {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    text-align: center;
+    /* z-index: 11; */
+}
+
+.gallaryimg:hover .imgHeading {
+    background-color: orange;
+    height: 20%;
+    line-height: 60px;
+    bottom: 0;
+}
+
+.proinfo {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 200px; */
+}

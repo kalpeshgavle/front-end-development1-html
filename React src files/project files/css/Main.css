@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+.info h1 {
+    font-size: 50px;
+}
+
+p {
+    padding-top: 20px;
+    letter-spacing: 2px;
+    padding-right: 150px;
+    padding-bottom: 60px;
+}
+
+.info {
+    padding-left: 150px;
+}
+
+button {
+    height: 50px;
+    width: 120px;
+    background-color: #b17812;
+    border: #b17812;
+    color: white;
+    font-size: 18px;
+}
+
+.imgstart {
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    box-shadow: -1px 2px 20px 7px #c5c5c5;
+}
+
+
+
+.review-main {
+    display: flex;
+    height: 300px;
+    width: 100%;
+}
